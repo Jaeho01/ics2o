@@ -2,6 +2,9 @@ body {
   background-color: #2CE7E7
 }
 h1 { 
-  color: #40443E
+  color: #40443E;
   text-align: center
 }
+p {
+  font-family: Georgia;
+  font-size: 20px

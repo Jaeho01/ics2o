@@ -8,3 +8,7 @@ h1 {
 p {
   font-family: Georgia;
   font-size: 20px
+}
+ul.a {
+  list-style-type: lower-alpha
+}

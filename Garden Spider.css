@@ -12,3 +12,8 @@ p {
 ul.a {
   list-style-type: lower-alpha;
 }
+ table, th, td {
+    border: 1px solid black;
+  }
+ table {
+   border-spacing: 5px;

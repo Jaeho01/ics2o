@@ -1,15 +1,17 @@
 body {
-  background-color: #2CE7E7
+  background-color: #2CE7E7;
 }
 h1 { 
   color: #40443E;
-  text-align: center
+  text-align: center;
 }
 p {
   font-family: Georgia;
   font-size: 20px
 }
 ul.a {
-  list-style-type: lower-alpha
+  list-style-type: lower-alpha;
 }
-
+ul.b {
+  list-style-type: numbers;
+}

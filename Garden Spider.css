@@ -12,8 +12,12 @@ p {
 ul.a {
   list-style-type: lower-alpha;
 }
- table, th, td {
+table, th, td {
     border: 1px solid black;
-  }
- table {
+}
+table {
    border-spacing: 5px;
+}
+h2 {
+  color: #00cc00;
+}

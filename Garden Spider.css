@@ -12,10 +12,10 @@ p {
 ul.a {
   list-style-type: lower-alpha;
 }
-table.a, th.a, td.a {
+table.b, th.b, td.b {
     border: 1px solid black;
 }
-table.a {
+table.b {
    border-spacing: 5px;
 }
 h2 {

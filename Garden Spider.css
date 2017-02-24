@@ -40,6 +40,6 @@ h2 {
     display: block;
 }
 ul.a {
-  list-style-image:  url('http://www.freepngimg.com/thumb/bullets/1-bullets-png-image-thumb.png')
+  list-style-image:  url="http://www.freepngimg.com/thumb/bullets/1-bullets-png-image-thumb.png"
 }    
   

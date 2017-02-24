@@ -42,3 +42,7 @@ h2 {
 ul.a {
     list-style-image: url('http://icons.iconarchive.com/icons/leoyue/the-bourne-ultimatum/24/Bullets-icon.png');
 }
+h1 {
+  background-color: #ffcc00;
+  border: 5px solid #7D0552;
+}    

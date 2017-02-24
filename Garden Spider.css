@@ -13,7 +13,7 @@ ul.a {
   list-style-type: lower-alpha;
 }
 table.b, th.b, td.b {
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 table.b {
    border-spacing: 5px;

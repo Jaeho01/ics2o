@@ -39,5 +39,7 @@ h2 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-ol {
+ul.a {
+  list-style-image:  url('http://www.freepngimg.com/thumb/bullets/1-bullets-png-image-thumb.png')
+}    
   

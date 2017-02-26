@@ -47,14 +47,14 @@ h1 {
   border: 5px solid #7D0552;
 }    
 a:link {
-    color: blue;
+    color: #680c96;
 }
 a:visited {
-    color: blue;
+    color: #af0e6f;
 }
 a:hover {
-    color: green;
+    color: #0dadad;
 }
 a:active {
-    color: yellow;
+    color: #0cf469;
 }

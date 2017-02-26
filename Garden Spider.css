@@ -22,7 +22,8 @@ h2 {
   color: #00cc00;
 }
 .dropdown {
-    display: inline-block;
+  position: relative;  
+  display: inline-block;
 }
 
 .dropdown-content {

@@ -20,14 +20,58 @@
     background-color: lightgrey;
     font-size: 20px;
   }
-  ul.a {
-    background: #92a8cc;
-    padding: 20px;
-  }
-  ul.a li.a {
-    background: lightgrey;
-    margin: 5px
-  }
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: seagreen;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
   a:link {
     color: #680c96;
   }
@@ -44,29 +88,43 @@
 </head>
 <body>
 <center><h1>All About Spam</h1></center>
+<ul>
+  <li><a href="About Myself.html">About Myself</a></li>
+  <li><a href="Grass Spider.html">My Dream Computer</a></li>
+  <li class="dropdown">
+    <a href="Garden Spider.html" class="dropbtn">Setting Up the Computer</a>
+    <div class="dropdown-content">
+      <a href="Garden Spider.html">Installing Applications</a>
+      <a href="Garden Spider02.html">Connecting to the Internet</a>
+      <a href="Garden Spider03.html">Sharing Informations</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="Ant Mimic Spider Intro.html" class="dropbtn">All About Spam</a>
+    <div class="dropdown-content">
+      <a href="Ant Mimic Spider Intro.html">Introduction</a>
+      <a href="Ant Mimic Spider Definition.html">Definition</a>
+      <a href="Ant Mimic Spider Purpose.html">Purpose of Spam</a>
+      <a href="Ant Mimic Spider Effects.html">Effects of spam</a>
+      <a htef="Ant Mimic Spider Protecting.html">How to protect your computer from spams</a>
+    </div>
+  </li>
+</ul>
+
 <h2>Introduction</h2>
   <p>Spam is blah blah blah</p>
-<p class="a">To learn more about spam, click one of the links below</p>
-<ul class="a">
-  <li class="a"><a href="#L1">Definition</a></li>
-  <li class="a"><a href="#L2">Purpose of Spam</a></li>
-  <li class="a"><a href="#L3">Effects of Spam</a></li>
-  <li class="a"><a href="#L4">How to protect your computer from spams</a></li>
-  <li class="a"></li>
-</ul>
-<h2 id="L1">Definition</h2>
+<h2>Introduction</h2>
   <p>Irrelevant or inappropriate messages sent on the Internet to a large number of recipients</p>
-<h2 id="L2">Purpose of Spam</h2>
+<h2>Purpose of Spam</h2>
   <p>Purpose of Spam is</p>
-<h2 id="L3">Effects of Spam</h2>
+<h2>Effects of Spam</h2>
   <p>Effects of Spam are..........</p>
-<h2 id="L4">How to protect your computer from spams</h2>
+<h2>How to protect your computer from spams</h2>
   <p>There are multiple ways to protect your computer from spams. They are: 
     <ul>
       <li></li>
       <li></li>
       <li></li>
     </ul>
-background from <a href="http://www.theinspirationgallery.com/" target="_blank">The Inspiration Gallery</a>
 </body>
 </html>

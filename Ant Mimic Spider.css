@@ -10,12 +10,15 @@ h1 {
     background-color: #7ea8ea;
     color: #6a3ea5;
   }
-p.a {
+h2 {
     border-left: 6px solid #486087;
     background-color: lightgrey;
-    font-size: 20px;
   }
- 
+
+p {
+    font-size: 20px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

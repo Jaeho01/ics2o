@@ -3,6 +3,8 @@ function setup() {
 }
 
 function draw() {
+//background
+background(255,165,0);
 // bottom
 rect(0, 350, 399, 50);
 // bottom circle

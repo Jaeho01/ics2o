@@ -2,6 +2,7 @@ function setup() {
   createCanvas(400, 400);
 }
 
+function draw() {
 // bottom
 rect(0, 350, 399, 50);
 // bottom circle
@@ -14,3 +15,4 @@ ellipse(200, 120, 75, 75);
 line(160, 200, 50, 100);
 // right arm
 line(240, 200, 350, 100);
+}

@@ -6,6 +6,7 @@ function draw() {
 //background
 background(255,165,0);
 // bottom
+fill(135, 206, 250);
 rect(0, 350, 399, 50);
 // bottom circle
 ellipse(200, 300, 150, 150);

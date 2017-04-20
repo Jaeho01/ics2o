@@ -2,27 +2,34 @@
 Jaeho Jang
 2017-4-13*/
 
-var posX = 600;
-var posY = 400;
-var speedX = 7;
-var speedY = 5;
+var posX = 100;
+var posY = 200;
+var speedX = 2;
+var speedY = 1;
 
 function setup() {
-  createCanvas(1200, 800);
+	createCanvas(400, 400);
+  	background(0, 104, 10); 
+
 }
 
 function draw() {
-	background(0, 104, 10); 
-	stroke(255, 255, 255);
-	line(600, 0, 600, 800);
-	fill(255, 255, 255);
-	stroke(0, 0, 0);
-	ellipse(posX, posY, 60, 60);
-    posX = posX + speedX;
-	posY = posX + speedY;
-	if (posX <= 0 && posX >= 600 && posY >= 400 && posY <= 0) {
-		speedX = -speedX;
-		speedY = -speedY;
+	strokeWeight(0.5);
+	fill(135,206,250);
+	ellipse(posX, posY, 20, 20);	
+	posY = posY + speedY;
+	posX = posX + speedX;
+	if (posX >= 400) {
+		speedX = -speedX
 	};
-  
+	if (posX <= 0) {
+		speedX = -speedX
+	};
+	if (posY >= 400) {
+		speedY = speedY - 1
+	};
+	if (posY <= 0) {
+		speedY = -speedY
+	};
 }
+	

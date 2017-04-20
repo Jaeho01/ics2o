@@ -17,8 +17,8 @@ function draw() {
 	strokeWeight(0.5);
 	fill(135,206,250);
 	ellipse(posX, posY, 20, 20);	
-	posY = posY + speedY;
-	posX = posX + speedX;
+	posY = posY + speedY + 1;
+	posX = posX + speedX + 1;
 	if (posX >= 400) {
 		speedX = -speedX
 	};
@@ -26,7 +26,7 @@ function draw() {
 		speedX = -speedX
 	};
 	if (posY >= 400) {
-		speedY = speedY - 1
+		speedY = -speedY
 	};
 	if (posY <= 0) {
 		speedY = -speedY

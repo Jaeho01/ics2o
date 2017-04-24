@@ -16,11 +16,11 @@ function draw() {
   ellipse(posX, posY, ballLength, ballLength);
   fill(0, 0, 0);
   beginShape();
-  vertex(posX, posY - posY/8);
-  vertex(posX - posX/7, posY);
-  vertex(posX - posX/11, posY + posY/7);
-  vertex(posX + posX/11, posY + posY/7);
-  vertex(posX + posX/7, posY);
+  vertex(posX, posY - posY/16);
+  vertex(posX - posX/14, posY);
+  vertex(posX - posX/22, posY + posY/14);
+  vertex(posX + posX/22, posY + posY/14);
+  vertex(posX + posX/14, posY);
   endShape(CLOSE);
   line(posX, posY - posY/8, posX, posY - posY/4);
   line(posX - posX/7, posY, posX - posX/4, posY - posY*0.03);

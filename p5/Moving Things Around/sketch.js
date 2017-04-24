@@ -26,4 +26,5 @@ function draw() {
   line(posX - posX/14, posY, posX - posX/10, posY - posY/30);
   line(posX - posX/22, posY + posY/14, posX - posX/14, posY + posY/10);
   line(posX + posX/22, posY + posY/14, posX + posX/14, posY + posY/10);
+  line(posX + posX/14, posY, posX + posX/10, posY - posY/30);
 }

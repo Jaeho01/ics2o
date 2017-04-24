@@ -1,7 +1,7 @@
 
 var posX = 400;
 var posY = 400;
-var ballLength = 200;
+var ballLength = 100;
 
 
 function setup() {

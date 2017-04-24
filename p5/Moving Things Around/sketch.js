@@ -24,5 +24,5 @@ function draw() {
   endShape(CLOSE);
   line(posX, posY - posY/16, posX, posY - posY/8);
   line(posX - posX/14, posY, posX - posX/8, posY - posY/26);
-  line(posX - posX/22, posY + posY/14, posX - posX/16, posY + posY/16);
+  line(posX - posX/22, posY + posY/14, posX - posX/8, posY + posY/8);
 }

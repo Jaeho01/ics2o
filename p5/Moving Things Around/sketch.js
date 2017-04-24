@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  //pentagon
+  //soccer ball
   fill(255, 255, 255);
   strokeWeight(1.5);
   ellipse(posX, posY, ballLength, ballLength);

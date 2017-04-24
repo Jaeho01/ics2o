@@ -22,7 +22,7 @@ function draw() {
   vertex(posX + posX/22, posY + posY/14);
   vertex(posX + posX/14, posY);
   endShape(CLOSE);
-  line(posX, posY - posY/8, posX, posY - posY/4);
-  line(posX - posX/7, posY, posX - posX/4, posY - posY*0.03);
-  line(posX - posX/11, posY + posY/7, posX - posX/8, posY + posY/8);
+  line(posX, posY - posY/16, posX, posY - posY/8);
+  line(posX - posX/14, posY, posX - posX/8, posY - posY/14);
+  line(posX - posX/22, posY + posY/14, posX - posX/16, posY + posY/16);
 }

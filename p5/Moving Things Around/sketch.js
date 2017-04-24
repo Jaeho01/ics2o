@@ -5,7 +5,7 @@ var ballLength = 100;
 
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(1600, 800);
   background(0, 104, 10);
 }
 

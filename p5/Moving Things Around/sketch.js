@@ -1,5 +1,5 @@
 
-var posX = 400;
+var posX = 800;
 var posY = 400;
 var ballLength = 100;
 

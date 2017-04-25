@@ -47,6 +47,7 @@ function draw() {
 }
 
 function goalie() {
+  fill(0, 0, 255);
   rect (400, 750, 200, 50);
 }
 

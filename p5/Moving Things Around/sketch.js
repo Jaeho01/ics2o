@@ -2,8 +2,8 @@
 var posX = 400;
 var posY = 400;
 var ballLength = 100;
-var ballSpeedX = 5;
-var ballSpeedY = 5;
+var ballSpeedX = random(5, 10);
+var ballSpeedY = random(5, 10);
 
 
 function setup() {

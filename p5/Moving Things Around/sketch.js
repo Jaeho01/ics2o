@@ -2,14 +2,16 @@
 var posX = 400;
 var posY = 400;
 var ballLength = 100;
+var ballSpeedX = 1;
+var ballSpeedY = 1;
 
 
 function setup() {
   createCanvas(1000, 800);
-  background(0, 104, 10);
 }
 
 function draw() {
+  background(0, 104, 10);
   //soccer ball
   fill(255, 255, 255);
   strokeWeight(1.5);
@@ -27,4 +29,24 @@ function draw() {
   line(posX - posX/22, posY + posY/14, posX - posX/14, posY + posY/10);
   line(posX + posX/22, posY + posY/14, posX + posX/14, posY + posY/10);
   line(posX + posX/14, posY, posX + posX/8, posY - posY/36);
+  posX = posX + ballSpeedX;
+  posY = posY + ballSpeedY;
+  if (posX <= 0) {
+    ballSpeedX = -ballSpeedX
+    };
+  if (posX >= 1000) {
+    ballSpeedX = -ballSpeedX
+    };
+  if (posY <= 0) {
+    ballSpeedY = -ballSpeedY
+    };
+  if (posY >= 800) {
+    ballSpeedY = -ballSpeedY
+    };
+  
+  
+  
+  
+  
+  
 }

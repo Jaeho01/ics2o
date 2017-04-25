@@ -11,6 +11,7 @@ function setup() {
 }
 
 function draw() {
+  stroke(255, 255, 255);
   line(500, 0, 500, 800);
   background(0, 104, 10);
   //soccer ball

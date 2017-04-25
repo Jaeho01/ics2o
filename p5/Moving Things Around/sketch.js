@@ -24,11 +24,11 @@ function draw() {
   vertex(posX + ballLength/5.5, posY + ballLength/3.5);
   vertex(posX + ballLength/3.5, posY);
   endShape(CLOSE);
-  line(posX, posY - posY/16, posX, posY - posY/8);
-  line(posX - posX/14, posY, posX - posX/8, posY - posY/36);
-  line(posX - posX/22, posY + posY/14, posX - posX/14, posY + posY/10);
-  line(posX + posX/22, posY + posY/14, posX + posX/14, posY + posY/10);
-  line(posX + posX/14, posY, posX + posX/8, posY - posY/36);
+  line(posX, posY - ballLength/4, posX, posY - ballLength/2);
+  line(posX - ballLength/3.5, posY, posX - ballLength/2, posY - ballLength/9);
+  line(posX - ballLength/5.5, posY + ballLength/3.5, posX - ballLength/3.5, posY + ballLength/2.5);
+  line(posX + ballLength/5.5, posY + ballLength/3.5, posX + ballLength/3.5, posY + ballLength/2.5);
+  line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);
   posX = posX + ballSpeedX;
   posY = posY + ballSpeedY;
   if (posX <= 0) {

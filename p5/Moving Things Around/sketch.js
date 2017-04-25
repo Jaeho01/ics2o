@@ -43,6 +43,7 @@ function draw() {
   if (posY >= 750) {
     ballSpeedY = -ballSpeedY
     };
+  goalie();
 }
 
 function goalie() {

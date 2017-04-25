@@ -19,7 +19,7 @@ function draw() {
   fill(0, 0, 0);
   beginShape();
   vertex(posX, posY - posY/16);
-  vertex(posX - posX/14, posY);
+  vertex(posX - ballLength/3.5, posY);
   vertex(posX - posX/22, posY + posY/14);
   vertex(posX + posX/22, posY + posY/14);
   vertex(posX + posX/14, posY);

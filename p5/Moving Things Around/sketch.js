@@ -11,8 +11,6 @@ function setup() {
 }
 
 function draw() {
-  stroke(255, 255, 255);
-  line(500, 0, 500, 800);
   background(0, 104, 10);
   //soccer ball
   fill(255, 255, 255);
@@ -45,10 +43,11 @@ function draw() {
   if (posY >= 750) {
     ballSpeedY = -ballSpeedY
     };
-  
-  
-  
-  
-  
-  
 }
+
+function goalie() {
+  rect (400, 750, 200, 50);
+}
+
+
+

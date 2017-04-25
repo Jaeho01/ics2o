@@ -2,8 +2,8 @@
 var posX = 400;
 var posY = 400;
 var ballLength = 100;
-var ballSpeedX = random(5, 10);
-var ballSpeedY = random(5, 10);
+var ballSpeedX = 5;
+var ballSpeedY = 5;
 
 
 function setup() {
@@ -32,16 +32,16 @@ function draw() {
   posX = posX + ballSpeedX;
   posY = posY + ballSpeedY;
   if (posX <= 50) {
-    ballSpeedX = -ballSpeedX
+    ballSpeedX = -ballSpeedX + random(-10, 10)
     };
   if (posX >= 950) {
-    ballSpeedX = -ballSpeedX
+    ballSpeedX = -ballSpeedX + random(-10, 10)
     };
   if (posY <= 50) {
-    ballSpeedY = -ballSpeedY
+    ballSpeedY = -ballSpeedY + random(-10, 10)
     };
   if (posY >= 750) {
-    ballSpeedY = -ballSpeedY
+    ballSpeedY = -ballSpeedY + random(-10, 10)
     };
   goalie();
 }

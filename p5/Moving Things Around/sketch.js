@@ -6,6 +6,7 @@ var ballSpeedX = 5;
 var ballSpeedY = 5;
 
 
+
 function setup() {
   createCanvas(1000, 800);
 }

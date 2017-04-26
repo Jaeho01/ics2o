@@ -49,8 +49,8 @@ function draw() {
 	  };
 	goalie();
 	if (rectX = posX && rectY = posY) {
-	  speedX = -speedX;
-	  speedY = -speedY;
+	  speedX = -speedX
+	  speedY = -speedY
 	};
 
 }

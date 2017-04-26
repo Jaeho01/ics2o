@@ -52,12 +52,12 @@ function goalie() {
   fill(0, 0, 255);
   rect (rectX, rectY, 200, 50);
 }
-function keyPressed() {
+function keyTyped() {
 	if (keyCode == RIGHT_ARROW) {
 		rectX += 4;
 	}
 	else if (keyCode == LEFT_ARROW) {
-		rectY -=4;
+		rectX -=4;
 	}
 }
 

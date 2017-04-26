@@ -48,11 +48,7 @@ function draw() {
 	  speedY = -speedY + random(-10, 10)
 	  };
 	goalie();
-	if (rectX = posX && rectY = posY) {
-	  speedX = -speedX
-	  speedY = -speedY
-	};
-
+	
 }
 
 function goalie() {

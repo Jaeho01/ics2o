@@ -52,7 +52,7 @@ function goalie() {
   fill(0, 0, 255);
   rect (rectX, rectY, 200, 50);
 }
-function keyTyped() {
+function keyIsDown() {
 	if (keyCode == RIGHT_ARROW) {
 		rectX += 4;
 	}

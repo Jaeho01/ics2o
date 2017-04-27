@@ -42,6 +42,7 @@ function draw() {
 	if (posY <= 50) {
 		speedY = -speedY
 	};
+	stroke(255, 153, 0);
 	fill(135, 206, 250);
 	rect(rectX, rectY, 50, 50);
 	rect(rect2X, rect2Y, 50, 100);
@@ -49,13 +50,13 @@ function draw() {
 }
 
 function mouseClicked () {
-	stroke(255, 153, 0);
 	soccerBall();
 	posX = mouseX;
 	posY = mouseY;
 	};
 
 function objects () {
+	stroke(255, 153, 0);
 	fill(135, 206, 250);
 	rect(rectX, rectY, 50, 50);
 	rect(rect2X, rect2Y, 50, 100);

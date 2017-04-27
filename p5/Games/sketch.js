@@ -41,7 +41,7 @@ function draw() {
 		speedX = -speedX
 	};
 	if (posY >= 750) {
-		speedY = -speedY + 5
+		speedY = -speedY - 5
 	};
 	if (posY <= 0) {
 		speedY = -speedY

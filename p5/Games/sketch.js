@@ -21,7 +21,6 @@ function draw() {
 	background(0, 104, 10); //background
 	strokeWeight(1.5); 
 	soccerBall();
-	objects();
 	
 	speedY = speedY + 2;
 

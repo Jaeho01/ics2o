@@ -7,6 +7,10 @@ var posY = 400;
 var ballLength = 100;
 var speedX = 5;
 var speedY = 5;
+var rectX = random(0, 1000);
+var rectY = random(0, 750);
+var ellipseX = random(25, 1000);
+var ellipseY = random(25, 800);
 
 function setup() {
 	createCanvas(1000, 800);
@@ -45,6 +49,10 @@ function mouseClicked () {
 	posY = mouseY;
 	};
 
+function objects () {
+	rect (rectX, rectY, 50, 50);
+	ellipse (ellipseX, ellipseY, 50, 50);
+	};
 function soccerBall () {
 	fill(255, 255, 255); //colour of the ball (only for the circle)
 	ellipse(posX, posY, ballLength, ballLength); //circle part of the ball

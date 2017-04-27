@@ -38,7 +38,13 @@ function draw() {
 		speedY = -speedY
 	};
 }
-	
+
+function mouseClicked () {
+	soccerBall();
+	posX = mouseX;
+	posY = mouseY;
+	};
+
 function soccerBall () {
 	fill(255, 255, 255); //colour of the ball (only for the circle)
 	ellipse(posX, posY, ballLength, ballLength); //circle part of the ball

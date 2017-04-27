@@ -21,7 +21,6 @@ function draw() {
 	background(0, 104, 10); //background
 	strokeWeight(1.5); 
 	soccerBall();
-	objects();
 	
 	speedY = speedY + 2;
 
@@ -43,19 +42,21 @@ function draw() {
 	if (posY <= 50) {
 		speedY = -speedY
 	};
+	
+	objects();
 }
 
 function mouseClicked () {
 	soccerBall();
 	posX = mouseX;
 	posY = mouseY;
-	objects();
 	};
 
 function objects () {
 	rect (rectX, rectY, 50, 50);
 	ellipse (ellipseX, ellipseY, 50, 50);
 	};
+
 function soccerBall () {
 	fill(255, 255, 255); //colour of the ball (only for the circle)
 	ellipse(posX, posY, ballLength, ballLength); //circle part of the ball

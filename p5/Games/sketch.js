@@ -20,6 +20,7 @@ function draw() {
 	background(0, 104, 10); //background
 	strokeWeight(1.5); 
 	soccerBall();
+	objects();
 	
 	speedY = speedY + 2;
 
@@ -41,6 +42,9 @@ function draw() {
 	if (posY <= 50) {
 		speedY = -speedY
 	};
+	if (posX >= rectX && posY <= rectY && posY >= rectY && posX <= rectX) {
+		speedX = -speedX
+	}
 }
 
 function mouseClicked () {

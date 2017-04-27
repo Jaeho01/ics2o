@@ -9,7 +9,7 @@ var speedX = 5;
 var speedY = 5;
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(1000, 800);
   	background(0, 104, 10); 
 
 }
@@ -34,7 +34,7 @@ function draw() {
 	line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);	
 	
 	posY = posY + speedY + 1;
-	posX = posX + speedX + 1;
+	posX = posX + speedX;
 	if (posX >= 400) {
 		speedX = -speedX
 	};
@@ -42,7 +42,7 @@ function draw() {
 		speedX = -speedX +1
 	};
 	if (posY >= 400) {
-		speedY = speedY -1
+		speedY = -speedY -1
 	};
 	if (posY <= 0) {
 		speedY = -speedY

@@ -33,7 +33,7 @@ function draw() {
 	line(posX + ballLength/5.5, posY + ballLength/3.5, posX + ballLength/3.5, posY + ballLength/2.5);
 	line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);	
 	
-	posY = posY + speedY + 1;
+	posY = posY + 1;
 	if (posX >= 1000) {
 		speedX = -speedX
 	};

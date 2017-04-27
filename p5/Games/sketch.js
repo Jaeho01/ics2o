@@ -15,23 +15,7 @@ function setup() {
 function draw() {
 	background(0, 104, 10); //background
 	strokeWeight(1.5); 
-	fill(255, 255, 255); //colour of the ball (only for the circle)
-	ellipse(posX, posY, ballLength, ballLength); //circle part of the ball
-	fill(0, 0, 0); //colour for the lines and the pentagon on the ball
-	//pentagon
-	beginShape();
-	vertex(posX, posY - ballLength/4); //top point of the pentagon
-	vertex(posX - ballLength/3.5, posY); //left point of the pentagon
-	vertex(posX - ballLength/5.5, posY + ballLength/3.5); //bottom left point of the pentagon
-	vertex(posX + ballLength/5.5, posY + ballLength/3.5); //bottom right point of the pentagon
-	vertex(posX + ballLength/3.5, posY); //right point of the pentagon
-	endShape(CLOSE);
-	//lines on the ball
-	line(posX, posY - ballLength/4, posX, posY - ballLength/2);
-	line(posX - ballLength/3.5, posY, posX - ballLength/2, posY - ballLength/9);
-	line(posX - ballLength/5.5, posY + ballLength/3.5, posX - ballLength/3.5, posY + ballLength/2.5);
-	line(posX + ballLength/5.5, posY + ballLength/3.5, posX + ballLength/3.5, posY + ballLength/2.5);
-	line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);	
+	soccerBall();
 	
 	speedY = speedY + 2;
 
@@ -55,3 +39,22 @@ function draw() {
 	};
 }
 	
+function soccerBall () {
+	fill(255, 255, 255); //colour of the ball (only for the circle)
+	ellipse(posX, posY, ballLength, ballLength); //circle part of the ball
+	fill(0, 0, 0); //colour for the lines and the pentagon on the ball
+	//pentagon
+	beginShape();
+	vertex(posX, posY - ballLength/4); //top point of the pentagon
+	vertex(posX - ballLength/3.5, posY); //left point of the pentagon
+	vertex(posX - ballLength/5.5, posY + ballLength/3.5); //bottom left point of the pentagon
+	vertex(posX + ballLength/5.5, posY + ballLength/3.5); //bottom right point of the pentagon
+	vertex(posX + ballLength/3.5, posY); //right point of the pentagon
+	endShape(CLOSE);
+	//lines on the ball
+	line(posX, posY - ballLength/4, posX, posY - ballLength/2);
+	line(posX - ballLength/3.5, posY, posX - ballLength/2, posY - ballLength/9);
+	line(posX - ballLength/5.5, posY + ballLength/3.5, posX - ballLength/3.5, posY + ballLength/2.5);
+	line(posX + ballLength/5.5, posY + ballLength/3.5, posX + ballLength/3.5, posY + ballLength/2.5);
+	line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);	
+	};

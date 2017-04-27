@@ -53,8 +53,9 @@ function mouseClicked () {
 	};
 
 function objects () {
-	rect (rectX, rectY, 50, 50);
-	rect (rect2X, rect2Y, 50, 100);
+	fill(135, 206, 250);
+	rect(rectX, rectY, 50, 50);
+	rect(rect2X, rect2Y, 50, 100);
 	};
 
 function soccerBall () {

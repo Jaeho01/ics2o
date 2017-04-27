@@ -51,6 +51,7 @@ function mouseClicked () {
 	soccerBall();
 	posX = mouseX;
 	posY = mouseY;
+	objects();
 	};
 
 function objects () {

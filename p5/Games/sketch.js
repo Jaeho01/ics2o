@@ -20,6 +20,7 @@ function setup() {
 function draw() {
 	background(0, 104, 10); //background
 	strokeWeight(1.5); 
+	stroke(0, 0, 0);
 	soccerBall();
 	
 	speedY = speedY + 2;

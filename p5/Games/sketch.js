@@ -43,10 +43,10 @@ function draw() {
 		speedY = -speedY
 	};
 	objects();
-	if (posX >= boxX && posY >= boxY && posY <= boxY+50 && posX <= boxX+50 ) { //ball hits the left side of the ball
+	if (posX >= boxX && posX <= boxX && posY >= boxY && posY <= boxY+50) { //ball hits the left side of the ball
 		speedX = -speedX
 	};
-	
+	if ()
 	
 }
 

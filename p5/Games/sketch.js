@@ -42,9 +42,6 @@ function draw() {
 	if (posY <= 50) {
 		speedY = -speedY
 	};
-	if (posX >= rectX && posY <= rectY && posY >= rectY && posX <= rectX) {
-		speedX = -speedX
-	};
 }
 
 function mouseClicked () {

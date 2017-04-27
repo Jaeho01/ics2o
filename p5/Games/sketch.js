@@ -49,6 +49,7 @@ function draw() {
 }
 
 function mouseClicked () {
+	stroke(255, 153, 0);
 	soccerBall();
 	posX = mouseX;
 	posY = mouseY;

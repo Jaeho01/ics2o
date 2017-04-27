@@ -7,10 +7,10 @@ var posY = 400;
 var ballLength = 100;
 var speedX = 5;
 var speedY = 5;
-var rectX = random(0, 1000);
-var rectY = random(0, 750);
-var ellipseX = random(25, 1000);
-var ellipseY = random(25, 800);
+var rectX = 200;
+var rectY = 400;
+var rect2Y = 700;
+var rect2Y = 200;
 
 function setup() {
 	createCanvas(1000, 800);
@@ -54,7 +54,7 @@ function mouseClicked () {
 
 function objects () {
 	rect (rectX, rectY, 50, 50);
-	ellipse (ellipseX, ellipseY, 50, 50);
+	ellipse (rect2X, rect2Y, 50, 50);
 	};
 
 function soccerBall () {

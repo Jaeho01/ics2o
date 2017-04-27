@@ -15,6 +15,7 @@ function setup() {
 function draw() {
 	background(0, 104, 10);
 	strokeWeight(1.5);
+	fill(255, 255, 255);
 	ellipse(posX, posY, ballLength, ballLength);
 	fill(0, 0, 0);
 	//pentagon

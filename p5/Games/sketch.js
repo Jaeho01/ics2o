@@ -54,7 +54,7 @@ function mouseClicked () {
 
 function objects () {
 	rect (rectX, rectY, 50, 50);
-	ellipse (rect2X, rect2Y, 50, 50);
+	rect (rect2X, rect2Y, 50, 100);
 	};
 
 function soccerBall () {

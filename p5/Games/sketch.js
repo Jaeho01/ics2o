@@ -38,8 +38,8 @@ function draw() {
 	posY = posY + speedY;
 	posX = posX + speedX;
 	
-	speedX = speedX - 1;
-	speedY = speedY - 1;
+	speedX = speedX - 0.000001;
+	speedY = speedY - 0.000001;
 	
 	if (posX >= 950) {
 		speedX = -speedX

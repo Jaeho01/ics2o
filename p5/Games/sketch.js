@@ -14,6 +14,7 @@ var ellipseY = random(25, 800);
 
 function setup() {
 	createCanvas(1000, 800);
+	frameRate(15);
 }
 
 function draw() {
@@ -36,7 +37,7 @@ function draw() {
 	if (posX <= 50) {
 		speedX = -speedX
 	};
-	if (posY >= 750) {
+	if (posY >= 750 && speedY = +speedY) {
 		speedY = -speedY
 	};
 	if (posY <= 50) {

@@ -10,11 +10,10 @@ var speedY = 5;
 
 function setup() {
 	createCanvas(1000, 800);
-  	background(0, 104, 10); 
-
 }
 
 function draw() {
+	background(0, 104, 10);
 	strokeWeight(1.5);
 	ellipse(posX, posY, ballLength, ballLength);
 	fill(0, 0, 0);
@@ -35,13 +34,13 @@ function draw() {
 	
 	posY = posY + speedY + 1;
 	posX = posX + speedX;
-	if (posX >= 400) {
+	if (posX >= 1000) {
 		speedX = -speedX
 	};
 	if (posX <= 0) {
 		speedX = -speedX +1
 	};
-	if (posY >= 400) {
+	if (posY >= 800) {
 		speedY = -speedY -1
 	};
 	if (posY <= 0) {

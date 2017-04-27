@@ -20,7 +20,6 @@ function setup() {
 function draw() {
 	background(0, 104, 10); //background
 	strokeWeight(1.5); 
-	stroke(0, 0, 0);
 	soccerBall();
 	
 	speedY = speedY + 2;
@@ -65,6 +64,7 @@ function objects () {
 
 function soccerBall () {
 	fill(255, 255, 255); //colour of the ball (only for the circle)
+	stroke(0, 0, 0);
 	ellipse(posX, posY, ballLength, ballLength); //circle part of the ball
 	fill(0, 0, 0); //colour for the lines and the pentagon on the ball
 	//pentagon

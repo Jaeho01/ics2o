@@ -9,7 +9,7 @@ var speedX = 5;
 var speedY = 5;
 var boxX = 200;
 var boxY = 400;
-var box2Y = 700;
+var box2X = 700;
 var box2Y = 200;
 
 function setup() {
@@ -42,10 +42,7 @@ function draw() {
 	if (posY <= 50) {
 		speedY = -speedY
 	};
-	stroke(255, 153, 0);
-	fill(135, 206, 250);
-	rect(rectX, rectY, 50, 50);
-	rect(rect2X, rect2Y, 50, 100);
+	objects();
 	
 }
 
@@ -58,8 +55,8 @@ function mouseClicked () {
 function objects () {
 	stroke(255, 153, 0);
 	fill(135, 206, 250);
-	rect(rectX, rectY, 50, 50);
-	rect(rect2X, rect2Y, 50, 100);
+	rect(boxX, boxY, 50, 50);
+	rect(box2X, box2Y, 50, 100);
 	};
 
 function soccerBall () {

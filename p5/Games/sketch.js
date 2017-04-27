@@ -14,7 +14,7 @@ var ellipseY = random(25, 800);
 
 function setup() {
 	createCanvas(1000, 800);
-	frameRate(15);
+	frameRate(30);
 }
 
 function draw() {

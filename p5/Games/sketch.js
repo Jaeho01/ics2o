@@ -7,10 +7,10 @@ var posY = 400;
 var ballLength = 100;
 var speedX = 5;
 var speedY = 5;
-var boxX = 200;
-var boxY = 400;
-var box2X = 700;
-var box2Y = 200;
+var boxX = random(0, 950);
+var boxY = random(0, 750);
+var box2X = random(0, 950);
+var box2Y = random(0, 700);
 
 function setup() {
 	createCanvas(1000, 800);

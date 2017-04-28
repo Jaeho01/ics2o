@@ -33,7 +33,6 @@ function draw() {
 	line(posX - ballLength/5.5, posY + ballLength/3.5, posX - ballLength/3.5, posY + ballLength/2.5);
 	line(posX + ballLength/5.5, posY + ballLength/3.5, posX + ballLength/3.5, posY + ballLength/2.5);
 	line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);
-}
 
 function keyIsDown() {
 	if (keyCode == RIGHT_ARROW) {
@@ -49,5 +48,6 @@ function keyIsDown() {
 		posY += 10;
 	}
 } 
+}
 
 

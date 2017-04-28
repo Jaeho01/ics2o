@@ -44,16 +44,16 @@ function draw() {
 	};
 	objects();
 	if (posX >= boxX && posX <= boxX+50 && posY >= boxY && posY <= boxY +50) { //ball hits the left side of the ball
-		speedX = -speedX
+		speedX = -speedX;
 	};
 	if (posX >= boxX && posX < boxX +50 && posY > boxY +50 && posY <= boxY) { //top side
-		speedY = -speedY
+		speedY = -speedY;
 	};
 	if (posX <= boxX +50 && posX >= boxX && posY <= boxY +50 && posY >= boxY) { //right side
-		speedX = -speedX
+		speedX = -speedX;
 	};
-	if (posX >= boxX && posX <= boxX +50 && posY <= boxY && posY >= boxY +50) {
-		speedY = -speedY
+	if (posX >= boxX && posX <= boxX +50 && posY <= boxY && posY >= boxY +50) { 
+		speedY = -speedY;
 	};
 }
 

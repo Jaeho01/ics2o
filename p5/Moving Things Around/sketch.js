@@ -34,20 +34,18 @@ function draw() {
 	line(posX + ballLength/5.5, posY + ballLength/3.5, posX + ballLength/3.5, posY + ballLength/2.5);
 	line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);
 
-function keyIsDown() {
-	if (keyCode == RIGHT_ARROW) {
+	if (keyIsDown(RIGHT_ARROW)) {
 		posX += 10;
 	}
-	else if (keyCode == LEFT_ARROW) {
+	if (keyIsDown(LEFT_ARROW)) {
 		posX -= 10;
 	}
-	else if (keyCode == UP_ARROW) {
+	if (keyIsDown(UP_ARROW)) {
 		posY -= 10;
 	}
-	else if (keyCode == DOWN_ARROW) {
+	if (keyIsDown(DOWN_ARROW)) {
 		posY += 10;
 	}
-} 
 }
 
 

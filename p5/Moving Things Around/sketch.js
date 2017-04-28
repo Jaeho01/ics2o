@@ -44,10 +44,10 @@ function keyPressed() {
 		posX -= 10;
 	}
 	else if (keyCode == UP_ARROW) {
-		posY += 10;
+		posY -= 10;
 	}
 	else if (keyCode == DOWN_ARROW) {
-		posY -= 10;
+		posY += 10;
 	}
 } 
 

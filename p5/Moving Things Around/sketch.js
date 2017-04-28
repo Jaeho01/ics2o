@@ -33,21 +33,23 @@ function draw() {
 	line(posX - ballLength/5.5, posY + ballLength/3.5, posX - ballLength/3.5, posY + ballLength/2.5);
 	line(posX + ballLength/5.5, posY + ballLength/3.5, posX + ballLength/3.5, posY + ballLength/2.5);
 	line(posX + ballLength/3.5, posY, posX + ballLength/2, posY - ballLength/9);
+	posX = posX + speedX;
+	posY = posY + speedY;
 	
 }
 
 function keyIsDown() {
 	if (keyCode == RIGHT_ARROW) {
-		posX += 10;
+		speedX += 10;
 	}
 	else if (keyCode == LEFT_ARROW) {
-		posX -= 10;
+		speedX -= 10;
 	}
 	else if (keyCode == UP_ARROW) {
-		posY -= 10;
+		speedY-= 10;
 	}
 	else if (keyCode == DOWN_ARROW) {
-		posY += 10;
+		speedY += 10;
 	}
 } 
 

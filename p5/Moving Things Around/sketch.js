@@ -36,7 +36,7 @@ function draw() {
 	
 }
 
-function keyPressed() {
+function keyIsDown() {
 	if (keyCode == RIGHT_ARROW) {
 		posX += 10;
 	}

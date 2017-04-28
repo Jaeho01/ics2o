@@ -33,7 +33,7 @@ function draw() {
 	if (posX >= 950) {
 		speedX = -speedX
 	};
-	if (posX <= 50) {
+	if (posX <= 50 && speedX < 0) {
 		speedX = -speedX
 	};
 	if (posY >= 750 && speedY > 0) {
@@ -43,17 +43,17 @@ function draw() {
 		speedY = -speedY
 	};
 	objects();
-	if (posX >= boxX && posX < boxX +1 && posY >= boxY && posY <= boxY +50) { //ball hits the left side of the ball
-		speedX = -speedX;
+	if (posX >= boxX -50 && posX < boxX -49 && posY >= boxY && posY <= boxY +25) { //ball hits the left side of the ball
+		speedX = -speedX
 	};
-	if (posX >= boxX && posX < boxX +50 && posY > boxY +50 && posY <= boxY) { //top side
-		speedY = -speedY;
+	if (posX <= boxX +75 && posX >= boxX +74  && posY <= boxY +25 && posY >= boxY) { //right side
+		speedX = -speedX
 	};
-	if (posX <= boxX +50 && posX >= boxX && posY <= boxY +50 && posY >= boxY) { //right side
-		speedX = -speedX;
+	if (posX >= boxX && posX <= boxX +25 && posY >= boxY -50 && posY <= boxY - 49) { //top side
+		speedY = -speedY
 	};
-	if (posX >= boxX && posX <= boxX +50 && posY <= boxY && posY >= boxY +50) { 
-		speedY = -speedY;
+	if (posX >= boxX && posX <= boxX +25 && posY <= boxY +75 && posY >= boxY +74) {  //bottom side
+		speedY = -speedY
 	};
 }
 

@@ -47,22 +47,22 @@ function draw() {
 	if (posY >= 750) {
 	  speedY = -speedY + random(-10, 10)
 	  };
-	goalie();
 	
-}
-
-function goalie() {
-  fill(0, 0, 255);
-  rect (rectX, rectY, 200, 50);
 }
 
 function keyPressed() {
 	if (keyCode == RIGHT_ARROW) {
-		rectX += 10;
+		posX += 10;
 	}
 	else if (keyCode == LEFT_ARROW) {
-		rectX -= 10;
+		posX -= 10;
 	}
-}
+	else if (keyCode == UP_ARROW) {
+		posY += 10;
+	}
+	else if (keyCode == DOWN_ARROW) {
+		posY -= 10;
+	}
+} 
 
 

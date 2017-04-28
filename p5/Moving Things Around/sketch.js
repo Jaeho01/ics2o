@@ -37,16 +37,16 @@ function draw() {
 
 function keyIsDown() {
 	if (keyCode == RIGHT_ARROW) {
-		speedX += 10;
+		posX += 10;
 	}
 	else if (keyCode == LEFT_ARROW) {
-		speedX -= 10;
+		posX -= 10;
 	}
 	else if (keyCode == UP_ARROW) {
-		speedY-= 10;
+		posY -= 10;
 	}
 	else if (keyCode == DOWN_ARROW) {
-		speedY += 10;
+		posY += 10;
 	}
 } 
 

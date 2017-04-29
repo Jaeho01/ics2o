@@ -18,6 +18,10 @@ function draw() {
 		fill(138,43,226);
 		rect(650, 200, 150, 150);
 	}
+	if (posX >= 200 && posX <= 800 && posY >= 550 && posY <= 700) {
+		fill(138,43,226);
+		rect(200, 800, 600, 150);
+	}
 	//soccer ball
 	fill(255, 255, 255);
 	strokeWeight(1.5);

@@ -13,6 +13,7 @@ function draw() {
 	shapes();
 	if (posX >= 200 && posX <= 350 && posY >= 500 && posY <= 650) {
 		fill(138,43,226);
+		shapes();
 	}
 	//soccer ball
 	fill(255, 255, 255);

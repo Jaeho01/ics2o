@@ -11,7 +11,12 @@ function setup() {
 function draw() {
 	background(0, 104, 10);
 	if (posX >= 200 && posX <= 350 && posY >= 500 && posY <= 650) {
-		shapes();
+		fill(138,43,226);
+		rect(200, 200, 150, 150);
+	}
+	if (posX >= 650 && posX <= 800 && posY <= 500 && posY <= 650) {
+		fill(138,43,226)
+		rect(650, 200, 150, 150);
 	}
 	//soccer ball
 	fill(255, 255, 255);
@@ -48,9 +53,6 @@ function draw() {
 	
 }
 
-function shapes() {
-	fill(138,43,226);
-	rect(200, 500, 150, 150);
-}
+
 
 	

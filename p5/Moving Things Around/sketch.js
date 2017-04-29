@@ -55,7 +55,6 @@ function draw() {
 function shapes() {
 	fill(0,191,255);
 	rect(boxX, boxY, 150, 150);
-	ellipse(circleX, circleY, 150, 150);
 }
 
 	

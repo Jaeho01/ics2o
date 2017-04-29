@@ -2,10 +2,6 @@
 var posX = 400;
 var posY = 400;
 var ballLength = 100;
-var boxX = random(0, 850);
-var boxY = random(0, 650);
-
-
 
 
 function setup() {
@@ -47,14 +43,14 @@ function draw() {
 		posY += 10;
 	}
 	shapes();
-	if (posX >= boxX && posX <= boxX +150 && posY >= boxY && posY <= boxY +150) {
+	if (posX >= 200 && posX <= 350 && posY >= 500 && posY <= 650) {
 		fill(138,43,226);
 	}
 }
 
 function shapes() {
 	fill(0,191,255);
-	rect(boxX, boxY, 150, 150);
+	rect(200, 500, 150, 150);
 }
 
 	

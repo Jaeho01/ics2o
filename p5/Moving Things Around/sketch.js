@@ -14,7 +14,7 @@ function draw() {
 		fill(138,43,226);
 		rect(200, 200, 150, 150);
 	}
-	if (posX >= 650 && posX <= 800 && posY <= 200 && posY <= 350) {
+	if (posX >= 650 && posX <= 800 && posY >= 200 && posY <= 350) {
 		fill(138,43,226);
 		rect(650, 200, 150, 150);
 	}

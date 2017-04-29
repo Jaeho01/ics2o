@@ -4,8 +4,7 @@ var posY = 400;
 var ballLength = 100;
 var boxX = random(0, 850);
 var boxY = random(0, 650);
-var circleX = random(50, 950);
-var circley = random(50, 750);
+
 
 
 

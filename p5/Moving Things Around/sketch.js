@@ -2,10 +2,11 @@
 var posX = 400;
 var posY = 400;
 var ballLength = 100;
-var speedX = 5;
-var speedY = 5;
-var rectX = 400;
-var rectY = 750;
+var boxX = random(0, 850);
+var boxY = random(0, 650);
+var circleX = random(50, 950);
+var circley = random(50, 750);
+
 
 
 function setup() {
@@ -46,6 +47,16 @@ function draw() {
 	if (keyIsDown(DOWN_ARROW)) {
 		posY += 10;
 	}
+	shapes();
+	if (posX >= boxX && posX <= boxX +150 && posY >= boxY && posY <= boxY +150) {
+		fill(138,43,226);
+	}
 }
 
+function shapes() {
+	fill(0,191,255);
+	rect(boxX, boxY, 150, 150);
+	ellipse(circleX, circleY, 150, 150);
+}
 
+	

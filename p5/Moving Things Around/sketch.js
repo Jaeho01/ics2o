@@ -2,6 +2,9 @@
 var posX = 400;
 var posY = 400;
 var ballLength = 100;
+var red = 0;
+var green = 0;
+var blue = 0;
 
 
 function setup() {
@@ -9,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-	background(0, 104, 10);
+	background(red, green, blue);
 	if (posX >= 200 && posX <= 350 && posY >= 200 && posY <= 350) {
 		fill(138,43,226);
 		rect(200, 200, 150, 150);
@@ -53,6 +56,15 @@ function draw() {
 	}
 	if (keyIsDown(DOWN_ARROW)) {
 		posY += 10;
+	}
+	if (keyIsDown(87)) {
+		red = red +1;
+	}
+	if (keyIsDown(65)) {
+		green = green +1;
+	}
+	if (keyIsDown(68)) {
+		blue = blue +1;
 	}
 	
 }

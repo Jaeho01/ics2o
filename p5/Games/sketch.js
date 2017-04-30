@@ -39,7 +39,7 @@ function draw() {
 		speedY = -speedY
 	};
 	objects();
-	if (posX >= 150 && posX <= 151 && posY >= 400 && posY <= 425) { //ball hits the left side of the ball
+	if (posX >= 150 && posX <= 154 && posY >= 400 && posY <= 425) { //ball hits the left side of the ball
 		speedX = -speedX
 	};
 	if (posX <= 275 && posX >= 274  && posY <= 425 && posY >= 400) { //right side

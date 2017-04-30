@@ -63,7 +63,6 @@ function objects () {
 	stroke(255, 153, 0);
 	fill(135, 206, 250);
 	rect(200, 400, 100, 100);
-	rect(700, 200, 50, 100);
 	};
 
 function soccerBall () {

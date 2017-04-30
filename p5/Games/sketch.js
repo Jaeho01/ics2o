@@ -7,10 +7,6 @@ var posY = 400;
 var ballLength = 100;
 var speedX = 5;
 var speedY = 5;
-var boxX = 200;
-var boxY = 400;
-var box2X = 700;
-var box2Y = 200;
 
 function setup() {
 	createCanvas(1000, 800);
@@ -43,7 +39,7 @@ function draw() {
 		speedY = -speedY
 	};
 	objects();
-	if (posX >= boxX -50 && posX < boxX -49 && posY >= boxY && posY <= boxY +25) { //ball hits the left side of the ball
+	if (posX >= 150 && posX <= 151 && posY >= 400 && posY <= 425) { //ball hits the left side of the ball
 		speedX = -speedX
 	};
 	if (posX <= boxX +75 && posX >= boxX +74  && posY <= boxY +25 && posY >= boxY) { //right side
@@ -66,8 +62,8 @@ function mouseClicked () {
 function objects () {
 	stroke(255, 153, 0);
 	fill(135, 206, 250);
-	rect(boxX, boxY, 50, 50);
-	rect(box2X, box2Y, 50, 100);
+	rect(200, 400, 50, 50);
+	rect(700, 200, 50, 100);
 	};
 
 function soccerBall () {

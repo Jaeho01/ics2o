@@ -75,6 +75,11 @@ function draw() {
 	if (keyIsDown(66)) {
 		blue = blue +1;
 	}
+	if (keyIsDown(79)) {
+		red = 0;
+		green = 104;
+		blue = 10;
+	}
 	if (keyIsDown(83)) {
 		red = 0;
 		green = 0;

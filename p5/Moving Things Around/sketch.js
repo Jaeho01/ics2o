@@ -8,7 +8,8 @@ var blue = 0;
 
 
 function setup() {
-  createCanvas(1000, 800);
+	var myCanvas = createCanvas(1000, 800);
+	myCanvas.parent('movingThingsAround');  
 }
 
 function draw() {

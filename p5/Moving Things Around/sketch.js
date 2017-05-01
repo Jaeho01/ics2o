@@ -58,30 +58,39 @@ function draw() {
 	if (keyIsDown(DOWN_ARROW)) {
 		posY += 10;
 	}
-	if (keyIsDown(87)) {
+	if (keyIsDown(87)) { //w
 		red = red +1;
 	}
-	if (keyIsDown(65)) {
+	if (keyIsDown(65)) { //a
 		green = green +1;
 	}
-	if (keyIsDown(68)) {
+	if (keyIsDown(68)) { //d
 		blue = blue +1;
 	}
-	if (keyIsDown(82)) {
+	if (keyIsDown(82)) { //r
 		red = red +1;
 	}
-	if (keyIsDown(71)) {
+	if (keyIsDown(71)) { //g
 		green = green +1;
 	}
-	if (keyIsDown(66)) {
+	if (keyIsDown(66)) { //b
 		blue = blue +1;
 	}
-	if (keyIsDown(79)) {
+	if (keyIsDown(73)) { //i
+		red = red -1;
+	}
+	if (keyIsDown(74)) { //j
+		green = green -1;
+	}
+	if (keyIsDown(76)) { //l
+		blue = blue -1;
+	}
+	if (keyIsDown(79)) { //o
 		red = 0;
 		green = 104;
 		blue = 10;
 	}
-	if (keyIsDown(83)) {
+	if (keyIsDown(83)) { //s 
 		red = 0;
 		green = 0;
 		blue = 0;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #2CE7E7;
+  }
+h1 {
+    border-style: outset;
+    border-width: 10px;
+    border-color: #486087;
+    border-radius: 10px;
+    font-family: impact;
+    background-color: #7ea8ea;
+    color: #6a3ea5;
+  }
+</style>
+<title>Traffic Light</title>
+
+</head>
+
+<body>
+
+<h1>Traffic Light Project</h1>
+
+<h2>Basic Requirements For Two Coordinated Sets Of Red, Yellow, Green Lights</h2>
+<br>
+<p>
+<ul>
+  <li>Green light stays on for 35 seconds</li>
+  <li>1 seconds for the green light to turn yellow</li>
+  <li>Yellow light stays on for 3 seconds</li>
+  <li>1 second for the yellow light to turn red</li>
+  <li>1 second from one traffic light turns red to the the other one turning green</li>
+  <li>While one traffic light is green, the other one is red. They never can be the same or it will be dangerous</li>
+</ul>
+</p>
+
+<pre>
+</pre>
+
+</body>
+</html>

@@ -27,17 +27,64 @@ h1 {
 
 <p>
 <ul>
-  <li>Green light stays on for 35 seconds while the other traffic light is red</li>
-  <li>Yellow light stays on for 3 seconds</li>
-  <li>It takes 1 second for the other traffic light to turn green when the first traffic light is red</li>
+  <li>NS green light turns on for 35 seconds</li>
+  <li>EW red light turns on for 40 seconds</li>
+  <li>NS green light turns off and NS yellow light turns on for 3 seconds</li>  
+  <li>NS yellow light turns off and NS red light turns on for 40 seconds</li>
+  <li>EW red light turns off after staying on with the NS red right for 2 seconds</li>
+  <li>EW green light turns on for 35 seconds</li>
+  <li>EW green light turns off and EW yellow light turns on for 3 seconds</li>
+  <li>EW yellow light turns off and EW red light turns on for 40 seconds</li>
+  <li>NS red light turns off after staying on with the EW red light for 2 seconds</li>
   <li>Repeat</li>
-  <li>The two traffic lights can not be the same colour because if they are they will be very dangerous. More explanation on the next page.</li>
 </ul>
 </p>
 
 Click <a href="Traffic Light Essay.html">here</a> to read an essay on traffic lights
   
 <pre>
+/* Traffic Lights
+Cory and Jaeho
+2017-05-04
+*/
+
+int ledR = 8; //NS red light 
+int ledY = 9; //NS yellow ligh
+int ledG = 10; //NS green light
+int ledR2 = 11; //EW red light
+int ledY2 = 12; //EW yellow light
+int ledG2 = 13; //EW green light
+
+void setup() {
+ pinMode (ledR, OUTPUT);
+ pinMode (ledY, OUTPUT);
+ pinMode (ledG, OUTPUT);
+ pinMode (ledR2, OUTPUT);
+ pinMode (ledY2, OUTPUT);
+ pinMode (ledG2, OUTPUT);    
+}
+
+void loop() {  
+  digitalWrite(ledR2, HIGH); //turns EW red light on
+  digitalWrite(ledG, HIGH); //turns NS green light on
+  delay(10000); //keep NS green light and EW red light on for 10 seconds
+  digitalWrite(ledG, LOW); //turns NS green light off
+  digitalWrite(ledY, HIGH); //turns NS yellow light on
+  delay(3000); //keep NS yellow light and EW red light on for 3 seconds
+  digitalWrite(ledY, LOW); //turn off NS yellow light
+  digitalWrite(ledR, HIGH); //turn on NS red light
+  delay(2000);//keep NS red light and EW red light on for 3 seconds
+  digitalWrite(ledR2, LOW); //turn off EW red light
+  digitalWrite(ledG2, HIGH); //turn EW green light on
+  delay(10000);//keep NS red light and EW green light on for 10 seconds
+  digitalWrite(ledG2, LOW); //turn EW green light off
+  digitalWrite(ledY2, HIGH); //turn EW yellow light on
+  delay(3000);//keep NS red light and EW yellow light on for 3 seconds
+  digitalWrite(ledY2, LOW); //turn EW yellow light off 
+  digitalWrite(ledR2, HIGH); //turns EW red light on
+  delay(2000);//keep NS red light and EW red light on for 3 seconds
+  digitalWrite(ledR, LOW); //turns NS red light off
+} 
 </pre>
 
 </body>

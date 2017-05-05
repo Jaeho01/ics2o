@@ -27,7 +27,7 @@ function trafficLightsAuto(nu,redLight,amberLight,greenLight) {
  }
 }
 
-function trafficLightsController() {
+function draw() {
 	if (!document.getElementById) return false;
 	var greenLight = document.getElementById("green-light");
 	var amberLight = document.getElementById("amber-light");

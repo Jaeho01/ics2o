@@ -75,5 +75,7 @@ function trafficLightsController() {
 }
 
 addLoadEvent(trafficLightsController);
+addLoadEvent(trafficLightsController);addLoadEvent(trafficLightsController);addLoadEvent(trafficLightsController);
+
 
 

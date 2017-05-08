@@ -59,31 +59,31 @@ function draw() {
 		posY += 10;
 	}
 	if (keyIsDown(87)) { //when w key is pressed, the red value of the background goes up
-		red = red +1;
+		red = red +2;
 	}
 	if (keyIsDown(65)) { //when a key is pressed, the green value of the background goes up
-		green = green +1;
+		green = green +2;
 	}
 	if (keyIsDown(68)) { //when d key is pressed, the blue value of the background goes up
-		blue = blue +1;
+		blue = blue +2;
 	}
 	if (keyIsDown(82)) { //when r key is pressed, the red value of the background goes up
-		red = red +1;
+		red = red +2;
 	}
 	if (keyIsDown(71)) { //when g key is pressed, the green value of the background goes up
-		green = green +1;
+		green = green +2;
 	}
 	if (keyIsDown(66)) { //when b key is pressed, the blue value of the background goes up
-		blue = blue +1;
+		blue = blue +2;
 	}
 	if (keyIsDown(73)) { //when i key is pressed, the red value of the background goes down
-		red = red -1;
+		red = red -2;
 	}
 	if (keyIsDown(74)) { //when j key is pressed, the green value of the background goes down
-		green = green -1;
+		green = green -2;
 	}
 	if (keyIsDown(76)) { //wnen l key is pressed, the blue value of the background goes down
-		blue = blue -1;
+		blue = blue -2;
 	}
 	if (keyIsDown(79)) { //when o key is pressed, the background goes to its original colour (field green)
 		red = 0;

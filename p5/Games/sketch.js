@@ -23,6 +23,7 @@ function draw() {
 	posY = posY + speedY; //yvalue of the ball increases overtime
 	posX = posX + speedX; //xvalue of the ball increases overtime
 	
+	//friction
 	speedX = speedX - 0.000001;
 	speedY = speedY - 0.000001;
 	
@@ -38,7 +39,7 @@ function draw() {
 	if (posY <= 50) { //bounces off the top when the ball hits the top
 		speedY = -speedY
 	};
-	objects();
+	objects(); //box that the ball bounces off
 	if (posX >= 150 && posX <= 154 && posY >= 350 && posY <= 550) { //ball hits the left side of the box
 		speedX = -speedX
 	};

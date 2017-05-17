@@ -7,10 +7,10 @@ function setup() {
 }
 
 function draw() {
-  var xPos = 60;
-var yPos = 210;
-var houseLength = 275;
-var houseHeight = 140;
+xPos = 60;
+yPos = 210;
+houseLength = 275;
+houseHeight = 140;
 
 // background
 background(116, 171, 212);

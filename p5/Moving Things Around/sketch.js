@@ -1,3 +1,6 @@
+/*Moving Things Around
+  Jaeho Jang
+  2017-05-16 */
 
 var posX = 400;
 var posY = 400;
@@ -33,11 +36,11 @@ function draw() {
 	fill(0, 0, 0);
 	//pentagon
 	beginShape();
-	vertex(posX, posY - ballLength/4); //top point of the pentagon
-	vertex(posX - ballLength/3.5, posY); //left point of the pentagon
-	vertex(posX - ballLength/5.5, posY + ballLength/3.5); //bottom left point of the pentagon
-	vertex(posX + ballLength/5.5, posY + ballLength/3.5); //bottom right point of the pentagon
-	vertex(posX + ballLength/3.5, posY); //right point of the pentagon
+		vertex(posX, posY - ballLength/4); //top point of the pentagon
+		vertex(posX - ballLength/3.5, posY); //left point of the pentagon
+		vertex(posX - ballLength/5.5, posY + ballLength/3.5); //bottom left point of the pentagon
+		vertex(posX + ballLength/5.5, posY + ballLength/3.5); //bottom right point of the pentagon
+		vertex(posX + ballLength/3.5, posY); //right point of the pentagon
 	endShape(CLOSE);
 	//lines
 	line(posX, posY - ballLength/4, posX, posY - ballLength/2);

@@ -47,7 +47,7 @@ function draw() {
 		  }
 		  
 	}
-  if ((posX >= brickX) && (posX < brickX+100) && (posY >= brickY-25)) {
+  if ((posX >= brickX) && (posX < brickX+100) && (posY >= brickY-12.5)) {
 	  speedX = -speedX;
 	  speedY = -speedY;
 	  posY > brickY-25;

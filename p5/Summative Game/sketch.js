@@ -4,7 +4,7 @@
 
 var posX = 250;
 var posY = 250;
-var ballWidth = 50;
+var ballWidth = 25;
 var speedX = 2;
 var speedY = 5;
 var brickX = 200;
@@ -23,14 +23,14 @@ function draw() {
   ellipse(posX, posY, ballWidth, ballWidth);
   posX = posX + speedX;
   posY = posY + speedY;
-  if (posX > 475) {
+  if (posX > 487.5) {
       speedX = -speedX
       }
-  if (posX < 25) {
+  if (posX < 12.5) {
       speedX = -speedX
     }
 
-  if (posY < 25) {
+  if (posY < 12.5) {
       speedY = -speedY
     }
   

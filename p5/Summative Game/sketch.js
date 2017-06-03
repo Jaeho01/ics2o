@@ -54,7 +54,8 @@ function draw() {
 		fill(255, 0, 0);
 		rect (0, 0, 500, 500);
 		}
-	
+	textSize(30);
+	text("YOU FAILED", 200, 250);
 
 	
   

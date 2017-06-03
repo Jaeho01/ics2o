@@ -50,14 +50,14 @@ function draw() {
 		posY > brickY-25;
 		}
 	brickB();
+	/*bricks();
 	bricks();
 	bricks();
 	bricks();
 	bricks();
 	bricks();
 	bricks();
-	bricks();
-	bricks();
+	bricks();*/
 	if (posY >= 525) {
 		fill(255, 0, 0);
 		rect (0, 0, 500, 500);
@@ -81,6 +81,6 @@ function draw() {
 function brickB() {
 	rect(brickX, brickY, 100, 25);
 }
-function bricks() {
+/*function bricks() {
 	rect(random(0, 500), random(0, 400), 75, 25);
-}
+}*/

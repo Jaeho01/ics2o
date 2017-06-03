@@ -57,6 +57,12 @@ function draw() {
 		text("YOU FAILED", 200, 150);
 		fill(50, 205, 50);
 		rect(125, 350, 250, 50);
+			if(mouseX >= 125 && mouseX <= 375 && mouseY >= 350 && mouseY <= 400) {
+				fill(0, 255, 127);
+				mouseIsPressed() {
+					
+					}
+				}
 		}
 	
 

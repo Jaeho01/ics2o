@@ -19,41 +19,44 @@ function setup() {
 }
 
 function draw() {
-  background(152,251,152);
-  ellipse(posX, posY, ballWidth, ballWidth);
-  posX = posX + speedX;
-  posY = posY + speedY;
-  if (posX > 487.5) {
+	background(152,251,152);
+	ellipse(posX, posY, ballWidth, ballWidth);
+	posX = posX + speedX;
+	posY = posY + speedY;
+	if (posX > 487.5) {
       speedX = -speedX
-      }
-  if (posX < 12.5) {
+		}
+	if (posX < 12.5) {
       speedX = -speedX
-    }
-
-  if (posY < 12.5) {
+		}
+	if (posY < 12.5) {
       speedY = -speedY
-    }
-  
-  if (keyIsDown(RIGHT_ARROW)) { 
+		}
+	if (keyIsDown(RIGHT_ARROW)) { 
 		brickX += speedBrick;
-		if (brickX >= 400) {
-			brickX = 400;
-		  } 
-	}
-  if (keyIsDown(LEFT_ARROW)) { 
+			if (brickX >= 400) {
+				brickX = 400;
+				} 
+		}
+	if (keyIsDown(LEFT_ARROW)) { 
 		brickX -= speedBrick;
-		if (brickX <= 0) {
-			brickX = 0;
-		  }
-		  
-	}
-  if ((posX >= brickX) && (posX < brickX+100) && (posY >= brickY-12.5)) {
-	  speedX = -speedX;
-	  speedY = -speedY;
-	  posY > brickY-25;
-  }
-  
-  brickB();
+			if (brickX <= 0) {
+				brickX = 0;
+				}
+		}
+	if ((posX >= brickX) && (posX < brickX+100) && (posY >= brickY-12.5)) {
+		speedX = -speedX;
+		speedY = -speedY;
+		posY > brickY-25;
+		}
+	brickB();
+	if (posY >= 525) {
+		fill(255, 0, 0);
+		rect (0, 0, 500, 500);
+		}
+	
+
+	
   
 }
 

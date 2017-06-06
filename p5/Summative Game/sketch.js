@@ -10,6 +10,7 @@ var speedY = 5;
 var brickX = 200;
 var brickY = 475;
 var speedBrick = 10;
+var score = 0;
 
 
 
@@ -21,8 +22,8 @@ function setup() {
 function draw() {
 	background(152,251,152);
 	ellipse(posX, posY, ballWidth, ballWidth);
-	posX = posX + speedX;
-	posY = posY + speedY;
+	posX = posX + speedX ;
+	posY = posY + speedY ;
 	if (posX > 487.5) {
       speedX = -speedX
 		}
@@ -48,7 +49,11 @@ function draw() {
 		speedX = -speedX;
 		speedY = -speedY;
 		posY > brickY-25;
+		score = score + 1;
 		}
+
+	fill(0, 0, 0);
+	text(score, 0,0);
 	brickB();
 	bricks();
 	bricks();
@@ -62,16 +67,15 @@ function draw() {
 		fill(255, 0, 0);
 		rect (0, 0, 500, 500);
 		textSize(30);
-		text("YOU FAILED", 200, 150);
+		fill(0, 0, 0);
+		text("YOU FAILED", 155, 150);
 		fill(50, 205, 50);
 		rect(125, 350, 250, 50);
-			/*if(mouseX >= 125 && mouseX <= 375 && mouseY >= 350 && mouseY <= 400) {
+			if(mouseX >= 125 && mouseX <= 375 && mouseY >= 350 && mouseY <= 400) {
 				fill(0, 255, 127);
-				mouseIsPressed() {
-					
-					}
+				
 				}
-		}*/
+		}
 	
 
 	
@@ -79,8 +83,10 @@ function draw() {
 }
 
 function brickB() {
+	fill(4, 255, 0);
 	rect(brickX, brickY, 100, 25);
 }
 function bricks() {
+	fill(0, 255, 127);
 	rect(random(0, 500), random(0, 400), 75, 25);
 }

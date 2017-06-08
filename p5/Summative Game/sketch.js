@@ -2,15 +2,15 @@
   Jaeho Jang
   2017-05-30 */
 
-var posX = 250;
-var posY = 250;
-var ballWidth = 25;
-var speedX = 2;
-var speedY = 5;
-var brickX = 200;
-var brickY = 475;
-var speedBrick = 10;
-var score = 0;
+var posX = 250; //x position of the ball
+var posY = 250; //y position of the ball
+var ballWidth = 25; //width of the ball
+var speedX = 2; //x speed of the ball
+var speedY = 5; //y speed of the ball
+var brickX = 200; //x position of the brick
+var brickY = 475; //y position of the brick
+var speedBrick = 10; //speed of the brick
+var score = 0; //starting score
 
 
 
@@ -21,27 +21,28 @@ function setup() {
 
 function draw() {
 	background(152,251,152);
-	ellipse(posX, posY, ballWidth, ballWidth);
-	posX = posX + speedX ;
-	posY = posY + speedY ;
-	if (posX > 487.5) {
+	fill(255, 153, 0); //color of the ball (orange)
+	ellipse(posX, posY, ballWidth, ballWidth); //ball that bounces around
+	posX = posX + speedX; //changes the x value for the ball
+	posY = posY + speedY; //changes the y value for the ball
+	if (posX > 487.5) {//if the ball hits the right wall, it bounces back
       speedX = -speedX
 		}
-	if (posX < 12.5) {
+	if (posX < 12.5) {//if the ball hits the left wall, it bounces back
       speedX = -speedX
 		}
-	if (posY < 12.5) {
+	if (posY < 12.5) {//if the ball hit the top wall, it bounces back
       speedY = -speedY
 		}
-	if (keyIsDown(RIGHT_ARROW)) { 
+	if (keyIsDown(RIGHT_ARROW)) { //if right arrow is pressed, the brick moves right
 		brickX += speedBrick;
-			if (brickX >= 400) {
+			if (brickX >= 400) { //the brick doesn't go past the right wall
 				brickX = 400;
 				} 
 		}
-	if (keyIsDown(LEFT_ARROW)) { 
+	if (keyIsDown(LEFT_ARROW)) { //if left arrow is pressed, the brick moves right
 		brickX -= speedBrick;
-			if (brickX <= 0) {
+			if (brickX <= 0) { //the brick doesn't go past the left wall
 				brickX = 0;
 				}
 		}
@@ -53,7 +54,8 @@ function draw() {
 		}
 
 	fill(0, 0, 0);
-	text(score, 0,0);
+	textSize(15);
+	text(score, 25,25);
 	brickB();
 	bricks();
 	bricks();
@@ -71,7 +73,8 @@ function draw() {
 		text("YOU FAILED", 155, 150);
 		fill(50, 205, 50);
 		rect(125, 350, 250, 50);
-			if(mouseX >= 125 && mouseX <= 375 && mouseY >= 350 && mouseY <= 400) {
+		speedY = 0;
+			if((mouseISpressed()) && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) {
 				fill(0, 255, 127);
 				
 				}

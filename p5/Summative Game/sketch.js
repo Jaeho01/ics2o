@@ -1,6 +1,6 @@
 /*Summative Game
   Jaeho Jang
-  2017-05-30 */
+  2017-06-12 */
 
 var posX = 250; //x position of the ball
 var posY = 250; //y position of the ball
@@ -36,10 +36,12 @@ function startup() {
 	background(0, 191, 255);
 	fill(0, 0, 128)
 	rect(125, 350, 250, 50);
+	textSize(50);
+	text("Bouncy Ball", 120, 200);
 	textSize(30);
 	fill(255, 255, 255);
 	text("Play", 220, 385);
-	if((mouseIsPressed()) && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) {
+	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) {
 		status = 1;
 	}
 }	
@@ -77,6 +79,7 @@ function playGame() {
 		posY > brickY-25;
 		score = score + 1;
 			}
+	brickB();
 	fill(0, 0, 0);
 	textSize(15);
 	text(score, 25,25);
@@ -91,11 +94,29 @@ function endGame() {
 	fill(0, 0, 0);
 	text("YOU FAILED", 155, 150);
 	fill(50, 205, 50);
-	rect(125, 350, 250, 50);
+	rect(125, 400, 250, 50);
+	fill(0, 0, 0);
+	text("Restart", 200, 440);
 	speedY = 0;
-	if((mouseIsPressed()) && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) {
-		fill(0, 255, 127);
+	if(score < 21689) {
+		textSize(15);
+		text("Try Again!! My high score is 21689 points", 115, 300);
+	}
+	if(score >= 21689) {
+		textSize(15);
+		text("Congrats!!! You have beaten my high score", 115, 300);
+	}
+	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 400) && (mouseY <= 450)) {
 		status = 0;
+		posX = 250; //x position of the ball
+		posY = 250; //y position of the ball
+		ballWidth = 25; //width of the ball
+		speedX = 2; //x speed of the ball
+		speedY = 5; //y speed of the ball
+		brickX = 200; //x position of the brick
+		brickY = 475; //y position of the brick
+		speedBrick = 10; //speed of the brick
+		score = 0; //starting score
 		}
 }
 

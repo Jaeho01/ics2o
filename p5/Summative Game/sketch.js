@@ -1,16 +1,18 @@
 /*Summative Game
   Jaeho Jang
-  2017-06-12 */
+  2017-05-30 */
 
 var posX = 250; //x position of the ball
 var posY = 250; //y position of the ball
+var pos2X = 200;
+var pos2Y = 200;
 var ballWidth = 25; //width of the ball
 var speedX = 2; //x speed of the ball
 var speedY = 5; //y speed of the ball
 var brickX = 200; //x position of the brick
 var brickY = 475; //y position of the brick
 var speedBrick = 10; //speed of the brick
-var score = 0; //starting score
+var score = 10; //starting score
 var status = 0; 
 
 
@@ -80,6 +82,11 @@ function playGame() {
 		score = score + 1;
 			}
 	brickB();
+	if (score >= 15) {
+		fill(255, 153, 0); //color of the ball (orange)
+		ellipse(pos2X, pos2Y, ballWidth, ballWidth); //ball that bounces around
+		
+	}
 	fill(0, 0, 0);
 	textSize(15);
 	text(score, 25,25);

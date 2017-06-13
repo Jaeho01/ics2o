@@ -132,16 +132,16 @@ function endGame() {
 	speedY = 0; //make sure that the ball doesn't bounce back up
 	speed2Y = 0; //make sure that the ball doesn't bounce back up
 	text("Your Score is" score, 150, 350); //tells the score
-	if(score < 21689) {
-		textSize(15);
-		text("Try Again!! My high score is 21689 points", 115, 300);
+	if(score < 21689) { //if the score is lower than 21689
+		textSize(15); //set the text size to 15
+		text("Try Again!! My high score is 21689 points", 115, 300); //display text
 	}
-	if(score >= 21689) {
-		textSize(15);
-		text("Congrats!!! You have beaten my high score", 115, 300);
+	if(score >= 21689) { //if the score is higher than 21689
+		textSize(15); //set the text size to 15
+		text("Congrats!!! You have beaten my high score", 115, 300); //display text
 	}
-	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 400) && (mouseY <= 450)) {
-		status = 0;
+	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 400) && (mouseY <= 450)) { //if restart rectangle is clicked, reset all the variables to what it was before the game has been played
+		status = 0; //make status 0
 		posX = 250; //x position of the ball
 		posY = 250; //y position of the ball
 		ballWidth = 25; //width of the ball
@@ -154,13 +154,7 @@ function endGame() {
 		}
 }
 
-		
-
 function brickB() {
 	fill(4, 255, 0);
 	rect(brickX, brickY, 100, 25);
-}
-function bricks() {
-	fill(0, 255, 127);
-	rect(random(0, 500), random(0, 400), 75, 25);
 }

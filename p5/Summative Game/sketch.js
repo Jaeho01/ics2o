@@ -131,8 +131,8 @@ function endGame() {
 	text("Restart", 200, 440); //display "Restart" inside the rectangle that is drawn
 	speedY = 0; //make sure that the ball doesn't bounce back up
 	speed2Y = 0; //make sure that the ball doesn't bounce back up
-	text("Your Score is:", 150, 350); //tells the score
-	text(score, 200, 350);
+	text("Your Score is:", 100, 350); //tells the score
+	text(score, 300, 350);
 	if(score < 21689) { //if the score is lower than 21689
 		textSize(15); //set the text size to 15
 		text("Try Again!! My high score is 21689 points", 115, 300); //display text

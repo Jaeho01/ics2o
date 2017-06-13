@@ -4,7 +4,7 @@
 
 var posX = 250; //x position of the ball
 var posY = 250; //y position of the ball
-var pos2X = 200;
+var pos2X = 100;
 var pos2Y = 200;
 var ballWidth = 25; //width of the ball
 var speedX = 2; //x speed of the ball
@@ -12,8 +12,10 @@ var speedY = 5; //y speed of the ball
 var brickX = 200; //x position of the brick
 var brickY = 475; //y position of the brick
 var speedBrick = 10; //speed of the brick
-var score = 10; //starting score
+var score = 0; //starting score
 var status = 0; 
+var speed2X = 5;
+var speed2Y = 5;
 
 
 
@@ -78,14 +80,37 @@ function playGame() {
 	if ((posX >= brickX) && (posX < brickX+100) && (posY >= brickY-12.5)) {
 		speedX = -speedX;
 		speedY = -speedY;
-		posY > brickY-25;
+		speedX = speedX - 0.5;
+		speedY = speedY - 0.5;
+		pos2Y > brickY-25;
 		score = score + 1;
 			}
 	brickB();
-	if (score >= 15) {
+	if (score >= 7) {
 		fill(255, 153, 0); //color of the ball (orange)
 		ellipse(pos2X, pos2Y, ballWidth, ballWidth); //ball that bounces around
-		
+		pos2X = pos2X + speed2X;
+		pos2Y = pos2Y + speed2Y;
+		if (pos2X > 487.5) {//if the ball hits the right wall, it bounces back
+			speed2X = -speed2X
+		}
+		if (pos2X < 12.5) {//if the ball hits the left wall, it bounces back
+			speed2X = -speed2X
+		}
+		if (pos2Y < 12.5) {//if the ball hit the top wall, it bounces back
+			speed2Y = -speed2Y
+		}
+		if ((pos2X >= brickX) && (pos2X < brickX+100) && (pos2Y >= brickY-12.5)) {
+			speed2X = -speed2X;
+			speed2Y = -speed2Y;
+			speed2X = speed2X - 0.5;
+			speed2Y = speed2Y - 0.5;
+			pos2Y > brickY-25;
+			score = score + 1;
+		}
+		if (pos2Y >= 525){
+			status = 2;
+		}
 	}
 	fill(0, 0, 0);
 	textSize(15);

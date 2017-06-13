@@ -105,7 +105,7 @@ function playGame() {
 			speed2Y = -speed2Y; //speed2Y reverses
 			speed2X = speed2X - 0.5; //speed2X increases by 0.5
 			speed2Y = speed2Y - 0.5; //speed2Y increases by 0.5
-			pos2Y > brickY-25; //This makes sure that the ball doesn't go under the brick
+			//pos2Y > brickY-25; //This makes sure that the ball doesn't go under the brick
 			score = score + 1; //Makes the score go up 1
 		}
 		if (pos2Y >= 525){ //if the ball goes out of the screen

@@ -18,12 +18,107 @@
     			color: #6a3ea5;
  		}
 	</style>
+	
+<title>Musical Instrument</title>
+	
 </head>
 
 <body>
+
 <h1><center>Musical Instrument</center></h2>
 
+<h2>About the instrument</h2>
+	<ul>
+		<li>The instrument will be controlled by the switches</li>
+		<li>There will be different switches for different switches</li>
+		<li>7 notes in a scale will be played (A, B, C, D, E, F, G) </li>
+		<li>4</li>
+		<li>The note will keep playing until the player releases the switch</li>
+		<li>User will be able to stop the note just by releasing the switch</li>
+	</ul>
 
+<p>Code for the arduino</p>
+
+	<pre>
+/* Instrument
+Cory Byrne & Jaeho Jang
+2017-05-31
+ */
+
+  int buttonA = 2; //button A connected to port 2
+  int buttonB = 3; //button B connected to port 3
+  int buttonC = 4; //button C connected to port 4
+  int buttonD = 5; //button D connected to port 5
+  int buttonE = 6; //button E connected to port 6
+  int buttonF = 7; //button F connected to port 7
+  int buttonG = 8; //button G connected to port 8
+
+void setup() { //code for seting up each button
+pinMode (buttonA, OUTPUT);
+pinMode (buttonB, OUTPUT);
+pinMode (buttonC, OUTPUT);
+pinMode (buttonD, OUTPUT);
+pinMode (buttonE, OUTPUT);
+pinMode (buttonF, OUTPUT);
+pinMode (buttonG, OUTPUT);
+}
+
+void loop() { //code for reading if any button is pressed
+  if (digitalRead(buttonA)==HIGH) { //if button A is pressed play note A
+    a ();
+  }
+  if (digitalRead(buttonB)==HIGH) { //if button B is pressed play note B
+    b ();
+  }
+  if (digitalRead(buttonC)==HIGH) { //if button C is pressed play note C
+    c ();
+  }
+  if (digitalRead(buttonD)==HIGH) { //if button D is pressed play note D
+    d ();
+  }
+  if (digitalRead(buttonE)==HIGH) { //if button E is pressed play note E
+    e ();
+  }
+  if (digitalRead(buttonF)==HIGH) { //if button F is pressed play note F
+    f ();
+  
+  if (digitalRead(buttonG)==HIGH) { //if button G is pressed play note G
+    g ();
+  }
+}
+void a () { //code for playing 'A' note
+  // play the tone using pin 13 with frequency 440 Hz for 500 ms = 0.3 seconds
+  tone(13, 440, 30);
+}
+void b () { //code for playing 'B' note
+  // play the tone using pin 13 with frequency 494 Hz for 500 ms = 0.3 seconds
+  tone(13, 494, 30);
+}
+void c () { //code for playing 'C' note
+  // play the tone using pin 13 with frequency 523 Hz for 500 ms = 0.3 seconds
+  tone(13, 523, 30);
+}
+void d () { //code for playing 'D' note
+  // play the tone using pin 13 with frequency 587 Hz for 500 ms = 0.3 seconds
+  tone(13, 587, 30);
+}
+void e () { //code for playing 'E' note
+  // play the tone using pin 13 with frequency 659 Hz for 500 ms = 0.3 seconds
+  tone(13, 659, 30);
+}
+void f () { //code for playing 'F' note
+  // play the tone using pin 13 with frequency 698 Hz for 500 ms = 0.3 seconds
+  tone(13, 698, 30);
+}
+void g () { //code for playing 'G' note
+  // play the tone using pin 13 with frequency 784 Hz for 500 ms = 0.3 seconds
+  tone(13, 784, 30);
+}
+
+</pre>
+
+<h3>Drawing of the circuit</h3>
+	
 </body>
 
 </html>

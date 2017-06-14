@@ -16,6 +16,14 @@ var score = 0; //starting score
 var status = 0; //makes the status 0 
 var speed2X = 5; //x speed of the second ball
 var speed2Y = 5; //y speed of the second ball
+var boxX1 = 50;
+var boxX2 = 200;
+var boxX3 = 350;
+var boxY1 = 50;
+var boxY2 = 150; 
+var boxY3 = 250;
+var boxW = 75;
+var boxL = 25;
 
 
 
@@ -118,15 +126,42 @@ function playGame() {
 	}
 	}
 	fill(192, 192, 192); //set the colour to grey
-	rect(50, 50, 75, 25); //draw rectangle
-	rect(50, 150, 75, 25); //draw rectangle
-	rect(50, 250, 75, 25); //draw rectangle
-	rect(200, 50, 75, 25); //draw rectangle
-	rect(350, 50, 75, 25); //draw rectangle
-	rect(200, 150, 75, 25); //draw rectangle
-	rect(350, 150, 75, 25); //draw rectangle
-	rect(200, 250, 75, 25); //draw rectangle
-	rect(350, 250, 75, 25); //draw rectangle
+	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1
+	if () {
+	    
+	    }
+	rect(boxX1, boxY2, boxW, boxL); //draw rectangle 2
+	if () {
+	    
+	    }
+	rect(boxX1, boxY3, boxW, boxL); //draw rectangle 3
+	if () {
+	    
+	    }
+	rect(boxX2, boxY1, boxW, boxL); //draw rectangle 4
+	if () {
+	    
+	    }
+	rect(boxX3, boxY1, boxW, boxL); //draw rectangle 5
+	if () {
+	    
+	    }
+	rect(boxX2, boxY2, boxW, boxL); //draw rectangle 6
+	if () {
+	    
+	    }
+	rect(boxX3, boxY2, boxW, boxL); //draw rectangle 7
+	if () {
+	    
+	    }
+	rect(boxX2, boxY3, boxW, boxL); //draw rectangle 8
+	if () {
+	    
+	    }
+	rect(boxX3, boxY3, boxW, boxL); //draw rectangle 9
+	if () {
+	    
+	    }
 	fill(0, 0, 0); //make the font colour black
 	textSize(15); //make the text size 15
 	text(score, 25,25); //display the score on the top left on the screen

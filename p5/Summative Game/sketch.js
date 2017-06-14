@@ -1,8 +1,8 @@
 /*Summative Game
   Jaeho Jang
-  2017-06-13 */
+  2017-06-14 */
 
-var posX = 250; //x position of the ball
+var posX = 300; //x position of the ball
 var posY = 250; //y position of the ball
 var pos2X = 100; //x position of the second ball
 var pos2Y = 200; //y position of the second ball
@@ -22,6 +22,8 @@ var speed2Y = 5; //y speed of the second ball
 function setup() {
   createCanvas(500, 500);
   status = 0; //makes sure that the status is 0 when the game starts
+  speed2X = 5; //x speed of the second ball
+  speed2Y = 5; //y speed of the second ball
 }
 
 function draw() {
@@ -77,7 +79,7 @@ function playGame() {
 				brickX = 0;
 					}
 			}
-	if ((posX >= brickX) && (posX < brickX+100) && (posY >= brickY-12.5)) { //when the ball hits the brick
+	if ((posX >= brickX) && (posX < brickX+113) && (posY >= brickY-12.5)) { //when the ball hits the brick
 		speedX = -speedX; //speedX reverses
 		speedY = -speedY; //speedY reverses
 		speedX = speedX - 0.5; //speedX increases by 0.5
@@ -111,7 +113,20 @@ function playGame() {
 		if (pos2Y >= 525){ //if the ball goes out of the screen
 			status = 2; //make status 2
 		}
+	if (score >= 14) {
+		speedBrick = 7;
 	}
+	}
+	fill(192, 192, 192); //set the colour to grey
+	rect(50, 50, 75, 25); //draw rectangle
+	rect(50, 150, 75, 25); //draw rectangle
+	rect(50, 250, 75, 25); //draw rectangle
+	rect(200, 50, 75, 25); //draw rectangle
+	rect(350, 50, 75, 25); //draw rectangle
+	rect(200, 150, 75, 25); //draw rectangle
+	rect(350, 150, 75, 25); //draw rectangle
+	rect(200, 250, 75, 25); //draw rectangle
+	rect(350, 250, 75, 25); //draw rectangle
 	fill(0, 0, 0); //make the font colour black
 	textSize(15); //make the text size 15
 	text(score, 25,25); //display the score on the top left on the screen
@@ -133,17 +148,17 @@ function endGame() {
 	speed2Y = 0; //make sure that the ball doesn't bounce back up
 	text("Your Score is:", 125, 350); //tells the score
 	text(score, 325, 350);
-	if(score < 21689) { //if the score is lower than 21689
+	if(score < 18) { //if the score is lower than 18
 		textSize(15); //set the text size to 15
-		text("Try Again!! My high score is 21689 points", 115, 300); //display text
+		text("Try Again!! My high score is 18 points", 115, 310); //display text
 	}
-	if(score >= 21689) { //if the score is higher than 21689
+	if(score >= 18) { //if the score is higher than 18
 		textSize(15); //set the text size to 15
 		text("Congrats!!! You have beaten my high score", 115, 300); //display text
 	}
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 400) && (mouseY <= 450)) { //if restart rectangle is clicked, reset all the variables to what it was before the game has been played
 		status = 0; //make status 0
-		posX = 250; //x position of the ball
+		posX = 300; //x position of the ball
 		posY = 250; //y position of the ball
 		ballWidth = 25; //width of the ball
 		speedX = 2; //x speed of the ball
@@ -152,6 +167,8 @@ function endGame() {
 		brickY = 475; //y position of the brick
 		speedBrick = 10; //speed of the brick
 		score = 0; //starting score
+		var speed2X = 5; //x speed of the second ball
+		var speed2Y = 5; //y speed of the second ball
 		}
 }
 

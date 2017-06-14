@@ -127,39 +127,39 @@ function playGame() {
 	}
 	fill(192, 192, 192); //set the colour to grey
 	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1
-	if () {
+	//if (posX >= boxX1 && posX <= boxX1 + boxW && posY >= boxY1 && posY <= boxY1 + 1) {
 	    
 	    }
 	rect(boxX1, boxY2, boxW, boxL); //draw rectangle 2
-	if () {
+	//if () {
 	    
 	    }
 	rect(boxX1, boxY3, boxW, boxL); //draw rectangle 3
-	if () {
+	//if () {
 	    
 	    }
 	rect(boxX2, boxY1, boxW, boxL); //draw rectangle 4
-	if () {
+	//if () {
 	    
 	    }
 	rect(boxX3, boxY1, boxW, boxL); //draw rectangle 5
-	if () {
+	//if () {
 	    
 	    }
 	rect(boxX2, boxY2, boxW, boxL); //draw rectangle 6
-	if () {
+	//if () {
 	    
 	    }
 	rect(boxX3, boxY2, boxW, boxL); //draw rectangle 7
-	if () {
+	//if () {
 	    
 	    }
 	rect(boxX2, boxY3, boxW, boxL); //draw rectangle 8
-	if () {
+	//if () {
 	    
 	    }
 	rect(boxX3, boxY3, boxW, boxL); //draw rectangle 9
-	if () {
+	//if () {
 	    
 	    }
 	fill(0, 0, 0); //make the font colour black

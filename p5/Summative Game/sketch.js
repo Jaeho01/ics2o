@@ -77,8 +77,8 @@ function howTo() {
 	rect(125, 400, 250, 50); //draw the rectangle
 	fill(255, 255, 255); //set the text colour to white
 	textSize(30);
-	text("Back", 207.5, 385); //display "Back" in the rectangle that had been drawn 
-	text("Play", 332.5, 385); //display "Play" in the rectangle that had been drawn 
+	text("Back", 157.5, 435); //display "Back" in the rectangle that had been drawn 
+	text("Play", 282.5, 435); //display "Play" in the rectangle that had been drawn 
 	strokeWeight(5);
 	fill(0, 0, 0);
 	line(250, 400, 250, 400);

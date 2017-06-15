@@ -81,7 +81,7 @@ function howTo() {
 	text("Play", 282.5, 435); //display "Play" in the rectangle that had been drawn 
 	strokeWeight(5);
 	fill(0, 0, 0);
-	line(250, 400, 250, 400);
+	line(250, 400, 250, 450);
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 250) && (mouseY >= 400) && (mouseY <= 450)) { //when the back box is clicked, change the status to 0
 		status = 0;
 	}

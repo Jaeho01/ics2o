@@ -127,7 +127,7 @@ function playGame() {
 		score = score + 1; //Makes the score go up 1
 			}
 	brickB();
-	if (score >= 7) { //if the score is 7 or larger
+	if (score >= 999999999) { //if the score is 14 or larger
 		fill(0, 0, 128); //set the colour of the ball to blue
 		ellipse(pos2X, pos2Y, ballWidth, ballWidth); //second ball that bounces around
 		pos2X = pos2X + speed2X; //moves the ball horizontally
@@ -159,103 +159,247 @@ function playGame() {
 	fill(192, 192, 192); //set the colour to grey
 	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1
 	
-	//if (posX >= boxX1 && posX <= boxX1 + boxW && posY <= boxY1 && posY >= boxY1 - 1) {} //top
-	//if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y <= boxY1 && pos2Y >= boxY1 - 1) {}
-	//if (posX >= boxX1 && posX <= boxX1 + boxW && posY >= boxY1 + boxL && posY <= boxY1 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y >= boxY1 + boxL && pos2Y <= boxY1 + boxL + 1) {}
-	//if (posX >= boxX1 - 1 && posX <= boxX1 && posY >= boxY1 && posY <= boxY1 + boxL) {} //left
-	//if (pos2X >= boxX1 - 1 && pos2X <= boxX1 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) {}
-	//if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY1 && posY <= boxY1 +boxL) {} //right
-	//if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) {}
+	if (posX >= boxX1 && posX <= boxX1 + boxW && posY <= boxY1 && posY >= boxY1 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y <= boxY1 && pos2Y >= boxY1 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX1 && posX <= boxX1 + boxW && posY >= boxY1 + boxL && posY <= boxY1 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y >= boxY1 + boxL && pos2Y <= boxY1 + boxL + 1) { //bottom
+		score = score + 1;
+	}
+	if (posX >= boxX1 - 1 && posX <= boxX1 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 - 1 && pos2X <= boxX1 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { /left/
+		score = score + 1;
+	}
+	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
+		score = score + 1;
+	}
 	
 	rect(boxX1, boxY2, boxW, boxL); //draw rectangle 2
 	
-	//if (posX >= boxX1 && posX <= boxX1 + boxW && posY <= boxY2 && posY >= boxY2 - 1) {} //top
-	//if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y <= boxY2 && pos2Y >= boxY2 - 1) {}
-	//if (posX >= boxX1 && posX <= boxX1 + boxW && posY >= boxY2 + boxL && posY <= boxY2 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y >= boxY2 + boxL && pos2Y <= boxY2 + boxL + 1) {}
-	//if (posX >= boxX1 - 1 && posX <= boxX1 && posY >= boxY2 && posY <= boxY2 + boxL) {} //left
-	//if (pos2X >= boxX1 - 1 && pos2X <= boxX1 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) {}
-	//if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY2 && posY <= boxY2 +boxL) {} //right
-	//if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) {}
+	if (posX >= boxX1 && posX <= boxX1 + boxW && posY <= boxY2 && posY >= boxY2 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y <= boxY2 && pos2Y >= boxY2 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX1 && posX <= boxX1 + boxW && posY >= boxY2 + boxL && posY <= boxY2 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y >= boxY2 + boxL && pos2Y <= boxY2 + boxL + 1) { //bottom
+		score = score + 1;
+	}	
+	if (posX >= boxX1 - 1 && posX <= boxX1 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 - 1 && pos2X <= boxX1 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
+		score = score + 1;
+	}
 	    
 	rect(boxX1, boxY3, boxW, boxL); //draw rectangle 3
 	
-	//if (posX >= boxX1 && posX <= boxX1 + boxW && posY <= boxY3 && posY >= boxY3 - 1) {} //top
-	//if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y <= boxY3 && pos2Y >= boxY3 - 1) {}
-	//if (posX >= boxX1 && posX <= boxX1 + boxW && posY >= boxY3 + boxL && posY <= boxY3 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y >= boxY3 + boxL && pos2Y <= boxY3 + boxL + 1) {}
-	//if (posX >= boxX1 - 1 && posX <= boxX1 && posY >= boxY3 && posY <= boxY3 + boxL) {} //left
-	//if (pos2X >= boxX1 - 1 && pos2X <= boxX1 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) {}
-	//if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY3 && posY <= boxY3 +boxL) {} //right
-	//if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) {}
+	if (posX >= boxX1 && posX <= boxX1 + boxW && posY <= boxY3 && posY >= boxY3 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y <= boxY3 && pos2Y >= boxY3 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX1 && posX <= boxX1 + boxW && posY >= boxY3 + boxL && posY <= boxY3 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 && pos2X <= boxX1 + boxW && pos2Y >= boxY3 + boxL && pos2Y <= boxY3 + boxL + 1) { //bottom
+		score = score + 1;
+	}
+	if (posX >= boxX1 - 1 && posX <= boxX1 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 - 1 && pos2X <= boxX1 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
+		score = score + 1;
+	}
 	    
 	rect(boxX2, boxY1, boxW, boxL); //draw rectangle 4
 	
-	//if (posX >= boxX2 && posX <= boxX2 + boxW && posY <= boxY1 && posY >= boxY1 - 1) {} //top
-	//if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y <= boxY1 && pos2Y >= boxY1 - 1) {}
-	//if (posX >= boxX2 && posX <= boxX2 + boxW && posY >= boxY1 + boxL && posY <= boxY1 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y >= boxY1 + boxL && pos2Y <= boxY1 + boxL + 1) {}
-	//if (posX >= boxX2 - 1 && posX <= boxX2 && posY >= boxY1 && posY <= boxY1 + boxL) {} //left
-	//if (pos2X >= boxX2 - 1 && pos2X <= boxX2 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) {}
-	//if (posX >= boxX2 + boxW && posX <= boxX2 + boxW + 1 && posY >= boxY1 && posY <= boxY1 +boxL) {} //right
-	//if (pos2X >= boxX2 + boxW && pos2X <= boxX2 + boxW + 1 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) {}
+	if (posX >= boxX2 && posX <= boxX2 + boxW && posY <= boxY1 && posY >= boxY1 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y <= boxY1 && pos2Y >= boxY1 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX2 && posX <= boxX2 + boxW && posY >= boxY1 + boxL && posY <= boxY1 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y >= boxY1 + boxL && pos2Y <= boxY1 + boxL + 1) { //bottom
+		score = score + 1;
+	}
+	if (posX >= boxX2 - 1 && posX <= boxX2 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 - 1 && pos2X <= boxX2 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX2 + boxW && posX <= boxX2 + boxW + 1 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 + boxW && pos2X <= boxX2 + boxW + 1 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
+		score = score + 1;
+	}
 	    
 	rect(boxX3, boxY1, boxW, boxL); //draw rectangle 5
 	
-	//if (posX >= boxX3 && posX <= boxX3 + boxW && posY <= boxY1 && posY >= boxY1 - 1) {} //top
-	//if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y <= boxY1 && pos2Y >= boxY1 - 1) {}
-	//if (posX >= boxX3 && posX <= boxX3 + boxW && posY >= boxY1 + boxL && posY <= boxY1 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y >= boxY1 + boxL && pos2Y <= boxY1 + boxL + 1) {}
-	//if (posX >= boxX3 - 1 && posX <= boxX3 && posY >= boxY1 && posY <= boxY1 + boxL) {} //left
-	//if (pos2X >= boxX3 - 1 && pos2X <= boxX3 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) {}
-	//if (posX >= boxX3 + boxW && posX <= boxX3 + boxW + 1 && posY >= boxY1 && posY <= boxY1 +boxL) {} //right
-	//if (pos2X >= boxX3 + boxW && pos2X <= boxX3 + boxW + 1 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) {}
+	if (posX >= boxX3 && posX <= boxX3 + boxW && posY <= boxY1 && posY >= boxY1 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y <= boxY1 && pos2Y >= boxY1 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX3 && posX <= boxX3 + boxW && posY >= boxY1 + boxL && posY <= boxY1 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y >= boxY1 + boxL && pos2Y <= boxY1 + boxL + 1) { //bottom
+		score = score + 1;
+	}
+	if (posX >= boxX3 - 1 && posX <= boxX3 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 - 1 && pos2X <= boxX3 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX3 + boxW && posX <= boxX3 + boxW + 1 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 + boxW && pos2X <= boxX3 + boxW + 1 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
+		score = score + 1;
+	}
 	    
 	    
 	rect(boxX2, boxY2, boxW, boxL); //draw rectangle 6
 
-	//if (posX >= boxX2 && posX <= boxX2 + boxW && posY <= boxY2 && posY >= boxY2 - 1) {} //top
-	//if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y <= boxY2 && pos2Y >= boxY2 - 1) {}
-	//if (posX >= boxX2 && posX <= boxX2 + boxW && posY >= boxY2 + boxL && posY <= boxY2 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y >= boxY2 + boxL && pos2Y <= boxY2 + boxL + 1) {}
-	//if (posX >= boxX2 - 1 && posX <= boxX2 && posY >= boxY2 && posY <= boxY2 + boxL) {} //left
-	//if (pos2X >= boxX2 - 1 && pos2X <= boxX2 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) {}
-	//if (posX >= boxX2 + boxW && posX <= boxX2 + boxW + 1 && posY >= boxY2 && posY <= boxY2 +boxL) {} //right
-	//if (pos2X >= boxX2 + boxW && pos2X <= boxX2 + boxW + 1 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) {}
+	if (posX >= boxX2 && posX <= boxX2 + boxW && posY <= boxY2 && posY >= boxY2 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y <= boxY2 && pos2Y >= boxY2 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX2 && posX <= boxX2 + boxW && posY >= boxY2 + boxL && posY <= boxY2 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y >= boxY2 + boxL && pos2Y <= boxY2 + boxL + 1) { //bottom
+		score = score + 1;
+	}
+	if (posX >= boxX2 - 1 && posX <= boxX2 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 - 1 && pos2X <= boxX2 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX2 + boxW && posX <= boxX2 + boxW + 1 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 + boxW && pos2X <= boxX2 + boxW + 1 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
+		score = score + 1;
+	}
 	
 	rect(boxX3, boxY2, boxW, boxL); //draw rectangle 7
 	
-	//if (posX >= boxX3 && posX <= boxX3 + boxW && posY <= boxY2 && posY >= boxY2 - 1) {} //top
-	//if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y <= boxY2 && pos2Y >= boxY2 - 1) {}
-	//if (posX >= boxX3 && posX <= boxX3 + boxW && posY >= boxY2 + boxL && posY <= boxY2 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y >= boxY2 + boxL && pos2Y <= boxY2 + boxL + 1) {}
-	//if (posX >= boxX3 - 1 && posX <= boxX3 && posY >= boxY2 && posY <= boxY2 + boxL) {} //left
-	//if (pos2X >= boxX3 - 1 && pos2X <= boxX3 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) {}
-	//if (posX >= boxX3 + boxW && posX <= boxX3 + boxW + 1 && posY >= boxY2 && posY <= boxY2 +boxL) {} //right
-	//if (pos2X >= boxX3 + boxW && pos2X <= boxX3 + boxW + 1 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) {}
+	if (posX >= boxX3 && posX <= boxX3 + boxW && posY <= boxY2 && posY >= boxY2 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y <= boxY2 && pos2Y >= boxY2 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX3 && posX <= boxX3 + boxW && posY >= boxY2 + boxL && posY <= boxY2 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y >= boxY2 + boxL && pos2Y <= boxY2 + boxL + 1) { //bottom
+		score = score + 1;
+	}	
+	if (posX >= boxX3 - 1 && posX <= boxX3 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 - 1 && pos2X <= boxX3 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX3 + boxW && posX <= boxX3 + boxW + 1 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 + boxW && pos2X <= boxX3 + boxW + 1 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
+		score = score + 1;
+	}
 	     
 	rect(boxX2, boxY3, boxW, boxL); //draw rectangle 8
 	
-	//if (posX >= boxX2 && posX <= boxX2 + boxW && posY <= boxY3 && posY >= boxY3 - 1) {} //top
-	//if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y <= boxY3 && pos2Y >= boxY3 - 1) {}
-	//if (posX >= boxX2 && posX <= boxX2 + boxW && posY >= boxY3 + boxL && posY <= boxY3 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y >= boxY3 + boxL && pos2Y <= boxY3 + boxL + 1) {}
-	//if (posX >= boxX2 - 1 && posX <= boxX2 && posY >= boxY3 && posY <= boxY3 + boxL) {} //left
-	//if (pos2X >= boxX2 - 1 && pos2X <= boxX2 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) {}
-	//if (posX >= boxX2 + boxW && posX <= boxX2 + boxW + 1 && posY >= boxY3 && posY <= boxY3 +boxL) {} //right
-	//if (pos2X >= boxX2 + boxW && pos2X <= boxX2 + boxW + 1 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) {}
+	if (posX >= boxX2 && posX <= boxX2 + boxW && posY <= boxY3 && posY >= boxY3 - 1) { //top
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y <= boxY3 && pos2Y >= boxY3 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX2 && posX <= boxX2 + boxW && posY >= boxY3 + boxL && posY <= boxY3 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 && pos2X <= boxX2 + boxW && pos2Y >= boxY3 + boxL && pos2Y <= boxY3 + boxL + 1) { //bottom
+		score = score + 1;
+	}
+	if (posX >= boxX2 - 1 && posX <= boxX2 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX2 - 1 && pos2X <= boxX2 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX2 + boxW && posX <= boxX2 + boxW + 1 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
+		score = score + 1;	
+	} 
+	if (pos2X >= boxX2 + boxW && pos2X <= boxX2 + boxW + 1 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
+		score = score + 1;
+	}
 	     
 	rect(boxX3, boxY3, boxW, boxL); //draw rectangle 9
 	
-	//if (posX >= boxX3 && posX <= boxX3 + boxW && posY <= boxY3 && posY >= boxY3 - 1) {} //top
-	//if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y <= boxY3 && pos2Y >= boxY3 - 1) {}
-	//if (posX >= boxX3 && posX <= boxX3 + boxW && posY >= boxY3 + boxL && posY <= boxY3 + boxL + 1) {} //bottom
-	//if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y >= boxY3 + boxL && pos2Y <= boxY3 + boxL + 1) {}
-	//if (posX >= boxX3 - 1 && posX <= boxX3 && posY >= boxY3 && posY <= boxY3 + boxL) {} //left
-	//if (pos2X >= boxX3 - 1 && pos2X <= boxX3 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) {}
-	//if (posX >= boxX3 + boxW && posX <= boxX3 + boxW + 1 && posY >= boxY3 && posY <= boxY3 +boxL) {} //right
-	//if (pos2X >= boxX3 + boxW && pos2X <= boxX3 + boxW + 1 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) {}
+	if (posX >= boxX3 && posX <= boxX3 + boxW && posY <= boxY3 && posY >= boxY3 - 1) { //top
+		score = score + 1;	
+	} 
+	if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y <= boxY3 && pos2Y >= boxY3 - 1) { //top
+		score = score + 1;
+	}
+	if (posX >= boxX3 && posX <= boxX3 + boxW && posY >= boxY3 + boxL && posY <= boxY3 + boxL + 1) { //bottom
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 && pos2X <= boxX3 + boxW && pos2Y >= boxY3 + boxL && pos2Y <= boxY3 + boxL + 1) { //bottom
+		score = score + 1;
+	}
+	if (posX >= boxX3 - 1 && posX <= boxX3 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 - 1 && pos2X <= boxX3 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
+		score = score + 1;
+	}
+	if (posX >= boxX3 + boxW && posX <= boxX3 + boxW + 1 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
+		score = score + 1;
+	} 
+	if (pos2X >= boxX3 + boxW && pos2X <= boxX3 + boxW + 1 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
+		score = score + 1;
+	}
 	    
 	fill(0, 0, 0); //make the font colour black
 	textSize(15); //make the text size 15

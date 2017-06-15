@@ -44,6 +44,9 @@ function draw() {
 	else if (status == 2) { //When the status is 2, display the endGame page
 		endGame();
 	}
+	else if (status == 3) { //When the status is 3, display the howTo page
+		howTo();
+	}
 }
 	
 function startup() {
@@ -54,11 +57,24 @@ function startup() {
 	text("Bouncy Ball", 120, 200); //Display "Bouncy Ball" on the screen
 	textSize(30); //set the text size to 30
 	fill(255, 255, 255); //set the text colour to white
+	rect(125, 290, 250, 50); //draw the rectangle
+	text("How to Play", 125, 290); //display "How to Play" in the rectangle that had been drawn 
 	text("Play", 220, 385); //display "Play" in the rectangle that had been drawn 
+	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 290) && (mouseY <= 340)) { //when the play box is clicked, change the status to 1
+		status = 3;
+	}
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) { //when the play box is clicked, change the status to 1
 		status = 1;
 	}
-}	
+}
+
+function howTo() {
+	background(192, 192, 192);
+	fill(147, 199, 188);
+	textSize(50);
+	text("How to Play the Game", 100, 200);
+	
+}
 	
 function playGame() {
 	background(124 ,252 ,0); //set the background to green

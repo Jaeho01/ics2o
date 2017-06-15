@@ -77,6 +77,8 @@ function howTo() {
 	fill(255, 255, 255); //set the text colour to white
 	textSize(30);
 	text("Back", 220, 385); //display "Play" in the rectangle that had been drawn 
+	fill(0, 0, 0);
+	line(250, 350, 250, 400);
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) { //when the play box is clicked, change the status to 1
 		status = 0;
 	}

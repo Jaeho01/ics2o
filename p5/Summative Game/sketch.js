@@ -59,7 +59,7 @@ function startup() {
 	fill(255, 255, 255); //set the text colour to white
 	fill(0, 0, 128); //make the colour of the rectangle blue
 	rect(125, 290, 250, 50); //draw the rectangle
-	text("How to Play", 125, 340); //display "How to Play" in the rectangle that had been drawn 
+	text("How to Play", 125, 320); //display "How to Play" in the rectangle that had been drawn 
 	text("Play", 220, 385); //display "Play" in the rectangle that had been drawn 
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 290) && (mouseY <= 340)) { //when the play box is clicked, change the status to 1
 		status = 3;

@@ -57,6 +57,7 @@ function startup() {
 	text("Bouncy Ball", 120, 200); //Display "Bouncy Ball" on the screen
 	textSize(30); //set the text size to 30
 	fill(255, 255, 255); //set the text colour to white
+	fill(0, 0, 128); //make the colour of the rectangle blue
 	rect(125, 290, 250, 50); //draw the rectangle
 	text("How to Play", 125, 340); //display "How to Play" in the rectangle that had been drawn 
 	text("Play", 220, 385); //display "Play" in the rectangle that had been drawn 

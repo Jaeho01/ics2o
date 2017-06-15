@@ -70,11 +70,13 @@ function startup() {
 
 function howTo() {
 	background(192, 192, 192);
+	fill(0, 0, 128); //make the colour of the rectangle blue
+	textSize(30);
+	text("How to Play the Game", 100, 100);
+	rect(125, 350, 250, 50); //draw the rectangle
 	fill(255, 255, 255); //set the text colour to white
 	textSize(30);
 	text("Back", 220, 385); //display "Play" in the rectangle that had been drawn 
-	fill(0, 0, 128); //make the colour of the rectangle blue
-	rect(125, 350, 250, 50); //draw the rectangle
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) { //when the play box is clicked, change the status to 1
 		status = 0;
 	}

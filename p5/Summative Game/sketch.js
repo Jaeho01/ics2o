@@ -58,7 +58,7 @@ function startup() {
 	text("Bouncy Ball", 120, 200); //Display "Bouncy Ball" on the screen
 	textSize(30); //set the text size to 30
 	fill(255, 255, 255); //set the text colour to white
-	text("How to Play", 125, 320); //display "How to Play" in the rectangle that had been drawn 
+	text("How to Play", 150, 330); //display "How to Play" in the rectangle that had been drawn 
 	text("Play", 220, 385); //display "Play" in the rectangle that had been drawn 
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 290) && (mouseY <= 340)) { //when the play box is clicked, change the status to 1
 		status = 3;

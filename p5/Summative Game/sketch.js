@@ -51,6 +51,7 @@ function draw() {
 	
 function startup() {
 	background(0, 191, 255); //set the background to light blue
+	strokeWeight(2); //set the outline thickness to 2
 	fill(0, 0, 128); //make the colour of the rectangle blue
 	rect(125, 350, 250, 50); //draw the rectangle
 	rect(125, 290, 250, 50); //draw the rectangle
@@ -82,7 +83,7 @@ function howTo() {
 	fill(0, 0, 0);
 	line(250, 350, 250, 400);
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 250) && (mouseY >= 350) && (mouseY <= 400)) { //when the back box is clicked, change the status to 0
-		status = 0;
+		startup();
 	}
 	if(mouseIsPressed && (mouseX >= 250) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) { //when the back box is clicked, change the status to 0
 		status = 1;
@@ -91,6 +92,7 @@ function howTo() {
 	
 function playGame() {
 	background(124 ,252 ,0); //set the background to green
+	strokeWeight(2); //set the outline thickness to 2
 	fill(255, 153, 0); //set the colour of the ball orange
 	ellipse(posX, posY, ballWidth, ballWidth); //ball that bounces around
 	posX = posX + speedX; //changes the x value for the ball
@@ -265,6 +267,7 @@ function playGame() {
 				
 function endGame() {
 	background(255, 0, 0); //sets the background colour to red
+	strokeWeight(2); //set the outline thickness to 2
 	textSize(30); //set the text size to 30
 	fill(0, 0, 0); //set the text colour to black
 	text("YOU FAILED", 155, 150); //display text "YOU FAILED"

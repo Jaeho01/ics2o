@@ -77,10 +77,11 @@ function howTo() {
 	rect(125, 400, 250, 50); //draw the rectangle
 	fill(0, 0, 0);
 	textSize(15);
-	text("The goal of the game is to break all the bricks on the screen and get the highest score by keeping the balls in the screen", 20, 150);
+	text("The goal of the game is to get the highest score by keeping the balls in the screen", 20, 150);
 	text("You will be able to control the brick at the bottom with your left-arrow key and right-arrow key", 20, 200);
 	text("The brick at the bottom will bounce the balls back to the screen", 20, 250);
-	text("If one of the ball hits the bottom wall, the game's over", 20, 300);
+	text("The ball will bounce of the bricks on the screen sometimes", 20, 300);
+	text("If one of the ball hits the bottom side, the game's over", 20, 350);
 	fill(255, 255, 255); //set the text colour to white
 	textSize(30);
 	text("Back", 157.5, 435); //display "Back" in the rectangle that had been drawn 

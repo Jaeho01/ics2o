@@ -134,7 +134,7 @@ function playGame() {
 		score = score + 1; //Makes the score go up 1
 			}
 	brickB();
-	if (score >= 10) { //if the score is 14 or larger
+	if (score >= 10) { //if the score is 10 or larger
 		fill(0, 0, 128); //set the colour of the ball to blue
 		ellipse(pos2X, pos2Y, ballWidth, ballWidth); //second ball that bounces around
 		pos2X = pos2X + speed2X; //moves the ball horizontally
@@ -159,9 +159,9 @@ function playGame() {
 		if (pos2Y >= 525){ //if the ball goes out of the screen
 			status = 2; //make status 2
 		}
-	if (score >= 14) {
+	/*if (score >= 14) {
 		speedBrick = 7;
-	}
+	}*/
 	}
 	fill(192, 192, 192); //set the colour to grey
 	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1

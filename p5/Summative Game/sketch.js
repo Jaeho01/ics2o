@@ -583,7 +583,7 @@ function endGame() {
 		text("Congrats!!! You have beaten my high score", 115, 300); //display text
 	}
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 400) && (mouseY <= 450)) { //if restart rectangle is clicked, reset all the variables to what it was before the game has been played
-		var posX = 300; //x position of the ball
+		posX = 300; //x position of the ball
 		posY = 250; //y position of the ball
 		pos2X = 100; //x position of the second ball
 		pos2Y = 200; //y position of the second ball

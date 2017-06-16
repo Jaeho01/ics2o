@@ -2,10 +2,10 @@
   Jaeho Jang
   2017-06-14 */
 
-var posX = 250; //x position of the ball
-var posY = 350; //y position of the ball
-var pos2X = 250; //x position of the second ball
-var pos2Y = 250; //y position of the second ball
+var posX = 300; //x position of the ball
+var posY = 250; //y position of the ball
+var pos2X = 100; //x position of the second ball
+var pos2Y = 200; //y position of the second ball
 var ballWidth = 25; //width of the ball
 var speedX = 2; //x speed of the ball
 var speedY = 5; //y speed of the ball
@@ -583,10 +583,10 @@ function endGame() {
 		text("Congrats!!! You have beaten my high score", 115, 300); //display text
 	}
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 400) && (mouseY <= 450)) { //if restart rectangle is clicked, reset all the variables to what it was before the game has been played
-		posX = 250; //x position of the ball
-		posY = 350; //y position of the ball
-		pos2X = 250; //x position of the second ball
-		pos2Y = 250; //y position of the second ball
+		posX = 300; //x position of the ball
+		posY = 250; //y position of the ball
+		pos2X = 100; //x position of the second ball
+		pos2Y = 200; //y position of the second ball
 		ballWidth = 25; //width of the ball
 		speedX = 2; //x speed of the ball
 		speedY = 5; //y speed of the ball

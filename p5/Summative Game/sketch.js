@@ -574,11 +574,11 @@ function endGame() {
 	speed2Y = 0; //make sure that the ball doesn't bounce back up
 	text("Your Score is:", 125, 350); //tells the score
 	text(score, 325, 350);
-	if(score < 24) { //if the score is lower than 24
+	if(score < 28) { //if the score is lower than 28
 		textSize(15); //set the text size to 15
-		text("Try Again!! My high score is 24 points", 115, 310); //display text
+		text("Try Again!! My high score is 28 points", 115, 310); //display text
 	}
-	if(score >= 24) { //if the score is higher than 24
+	if(score >= 28) { //if the score is higher than 28
 		textSize(15); //set the text size to 15
 		text("Congrats!!! You have beaten my high score", 115, 300); //display text
 	}

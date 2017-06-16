@@ -584,27 +584,27 @@ function endGame() {
 	}
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 400) && (mouseY <= 450)) { //if restart rectangle is clicked, reset all the variables to what it was before the game has been played
 		var posX = 300; //x position of the ball
-	posY = 250; //y position of the ball
-	pos2X = 100; //x position of the second ball
-	pos2Y = 200; //y position of the second ball
-	ballWidth = 25; //width of the ball
-	speedX = 2; //x speed of the ball
-	speedY = 5; //y speed of the ball
-	brickX = 200; //x position of the brick
-	brickY = 475; //y position of the brick
-	speedBrick = 10; //speed of the brick
-	score = 0; //starting score
-	status = 0; //makes the status 0 
-	speed2X = 5; //x speed of the second ball
-	speed2Y = 5; //y speed of the second ball
-	boxX1 = 50;
-	boxX2 = 200;
-	boxX3 = 350;
-	boxY1 = 50;
-	boxY2 = 150; 
-	boxY3 = 250;
-	boxW = 75;
-	boxL = 25;
+		posY = 250; //y position of the ball
+		pos2X = 100; //x position of the second ball
+		pos2Y = 200; //y position of the second ball
+		ballWidth = 25; //width of the ball
+		speedX = 2; //x speed of the ball
+		speedY = 5; //y speed of the ball
+		brickX = 200; //x position of the brick
+		brickY = 475; //y position of the brick
+		speedBrick = 10; //speed of the brick
+		score = 0; //starting score
+		status = 0; //makes the status 0 
+		speed2X = 5; //x speed of the second ball
+		speed2Y = 5; //y speed of the second ball
+		boxX1 = 50;
+		boxX2 = 200;
+		boxX3 = 350;
+		boxY1 = 50;
+		boxY2 = 150; 
+		boxY3 = 250;
+		boxW = 75;
+		boxL = 25;
 		}
 }
 

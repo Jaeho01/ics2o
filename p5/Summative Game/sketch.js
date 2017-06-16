@@ -2,10 +2,10 @@
   Jaeho Jang
   2017-06-14 */
 
-var posX = 300; //x position of the ball
-var posY = 250; //y position of the ball
-var pos2X = 100; //x position of the second ball
-var pos2Y = 200; //y position of the second ball
+var posX = 50; //x position of the ball
+var posY = 50; //y position of the ball
+var pos2X = 450; //x position of the second ball
+var pos2Y = 50; //y position of the second ball
 var ballWidth = 25; //width of the ball
 var speedX = 2; //x speed of the ball
 var speedY = 5; //y speed of the ball

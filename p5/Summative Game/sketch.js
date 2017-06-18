@@ -24,13 +24,13 @@ var boxY2 = 150;
 var boxY3 = 250;
 var boxW = 75;
 var boxL = 25;
-var mySound; // Creates a variable to hold the sound
-//var myMusic; // Creates a variable to hold the music
+//var mySound; // Creates a variable to hold the sound
+var myMusic; // Creates a variable to hold the music
 
 
 function preload() {
-  mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
-  //myMusic = loadSound('audio.mp3'); // Loads the sound file into the variable
+  //mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
+  myMusic = loadSound('audio.mp3'); // Loads the sound file into the variable
 }
 
 
@@ -39,15 +39,15 @@ function setup() {
   status = 0; //makes sure that the status is 0 when the game starts
   speed2X = 5; //x speed of the second ball
   speed2Y = 5; //y speed of the second ball
-  mySound.setVolume(0.1);
-  /*myMusic.setVolume(0.2);
-  myMusic.play();*/
+  //mySound.setVolume(0.1);
+  myMusic.setVolume(0.2);
+  myMusic.play();
 }
 
 function draw() {
-	  /*if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+	  if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
     myMusic.play()
-  }*/
+  }
 	if (status == 0) { //when the status is 0, display the startup page
 		startup(); 
 	}

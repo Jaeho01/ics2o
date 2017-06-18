@@ -150,7 +150,7 @@ function playGame() {
 		//mySound.play(); //plays the sound
 			}
 	brickB();
-	if (score >= 12) { //if the score is 12 or larger
+	if (score >= 14) { //if the score is 12 or larger
 		fill(0, 0, 128); //set the colour of the ball to blue
 		ellipse(pos2X, pos2Y, ballWidth, ballWidth); //second ball that bounces around
 		pos2X = pos2X + speed2X; //moves the ball horizontally

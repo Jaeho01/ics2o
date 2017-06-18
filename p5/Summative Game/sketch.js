@@ -29,8 +29,8 @@ var myMusic; // Creates a variable to hold the music
 
 
 function preload() {
-  mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
-  myMusic = loadSound('audio.mp3'); // Loads the sound file into the variable
+  //mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
+  //myMusic = loadSound('audio.mp3'); // Loads the sound file into the variable
 }
 
 

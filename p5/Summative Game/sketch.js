@@ -45,6 +45,9 @@ function setup() {
 }
 
 function draw() {
+	  if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+    myMusic.play()
+  }
 	if (status == 0) { //when the status is 0, display the startup page
 		startup(); 
 	}

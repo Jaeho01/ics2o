@@ -24,8 +24,8 @@ var boxY2 = 150;
 var boxY3 = 250;
 var boxW = 75;
 var boxL = 25;
-var mySound; // Creates a variable to hold the sound
-var myMusic; // Creates a variable to hold the music
+//var mySound; // Creates a variable to hold the sound
+//var myMusic; // Creates a variable to hold the music
 
 
 function preload() {
@@ -39,7 +39,7 @@ function setup() {
   status = 0; //makes sure that the status is 0 when the game starts
   speed2X = 5; //x speed of the second ball
   speed2Y = 5; //y speed of the second ball
-  mySound.setVolume(0.1);
+  //mySound.setVolume(0.1);
   /*myMusic.setVolume(0.2);
   myMusic.play();*/
 }

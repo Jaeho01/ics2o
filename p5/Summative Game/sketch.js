@@ -175,9 +175,12 @@ function playGame() {
 		if (pos2Y >= 525){ //if the ball goes out of the screen
 			status = 2; //make status 2
 		}
-	/*if (score >= 14) {
+	if (keyIsDown(67)) { //when a key is pressed, the speed of the brick decreases
 		speedBrick = 7;
-	}*/
+	}
+	if (keyIsDown(69)) { //When a key is pressed, the speed of the brick increases
+		speedBrick = 14;
+	}
 	}
 	fill(192, 192, 192); //set the colour to grey
 	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1

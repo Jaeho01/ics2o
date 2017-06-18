@@ -175,10 +175,10 @@ function playGame() {
 		if (pos2Y >= 525){ //if the ball goes out of the screen
 			status = 2; //make status 2
 		}
-	if (keyIsDown(67)) { //when a key is pressed, the speed of the brick decreases
+	if (keyPressed(67)) { //when a key is pressed, the speed of the brick decreases
 		speedBrick = 7;
 	}
-	if (keyIsDown(69)) { //When a key is pressed, the speed of the brick increases
+	if (keyPressed(69)) { //When a key is pressed, the speed of the brick increases
 		speedBrick = 14;
 	}
 	}

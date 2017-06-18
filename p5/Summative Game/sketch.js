@@ -147,7 +147,7 @@ function playGame() {
 		speedY = speedY - 0.5; //speedY increases by 0.5
 		posY > brickY-25; //This makes sure that the ball doesn't go under the brick
 		score = score + 1; //Makes the score go up 1
-		mySound.play(); //plays the sound
+		//mySound.play(); //plays the sound
 			}
 	brickB();
 	if (score >= 12) { //if the score is 12 or larger

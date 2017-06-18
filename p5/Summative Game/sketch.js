@@ -40,14 +40,14 @@ function setup() {
   speed2X = 5; //x speed of the second ball
   speed2Y = 5; //y speed of the second ball
   mySound.setVolume(0.1);
-  myMusic.setVolume(0.2);
-  myMusic.play();
+  /*myMusic.setVolume(0.2);
+  myMusic.play();*/
 }
 
 function draw() {
-	  if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+	  /*if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
     myMusic.play()
-  }
+  }*/
 	if (status == 0) { //when the status is 0, display the startup page
 		startup(); 
 	}

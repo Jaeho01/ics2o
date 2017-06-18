@@ -119,6 +119,12 @@ function playGame() {
 	ellipse(posX, posY, ballWidth, ballWidth); //ball that bounces around
 	posX = posX + speedX; //changes the x value for the ball
 	posY = posY + speedY; //changes the y value for the ball
+	if (keyPressed(67)) { //when a key is pressed, the speed of the brick decreases
+		speedBrick = 7;
+	}
+	if (keyPressed(69)) { //When a key is pressed, the speed of the brick increases
+		speedBrick = 14;
+	}
 	if (posX > 487.5) {//if the ball hits the right wall, it bounces back
 		speedX = -speedX
 			}
@@ -176,12 +182,7 @@ function playGame() {
 			status = 2; //make status 2
 		}
 	}
-	/*if (keyPressed(67)) { //when a key is pressed, the speed of the brick decreases
-		speedBrick = 7;
-	}
-	if (keyPressed(69)) { //When a key is pressed, the speed of the brick increases
-		speedBrick = 14;
-	}*/
+	
 	fill(192, 192, 192); //set the colour to grey
 	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1
 	

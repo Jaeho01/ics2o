@@ -80,7 +80,7 @@ function howTo() {
 	text("The goal of the game is to get the highest score by keeping the balls", 20, 150);
 	text("in the screen", 200, 175);
 	text("You will be able to control the brick at the bottom with your", 20, 200);
-	text("left-arrow key and right-arrow key", 200, 225);
+	text("left-arrow key and right-arrow key", 150, 225);
 	text("The brick at the bottom will bounce the balls back to the screen", 20, 250);
 	text("The ball will bounce off the bricks on the screen, sometimes", 20, 300);
 	text("If one of the ball hits the bottom side, the game's over", 20, 350);

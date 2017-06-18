@@ -164,7 +164,7 @@ function playGame() {
 		if (pos2Y < 12.5) {//if the ball hit the top wall, it bounces back
 			speed2Y = -speed2Y
 		}
-		if ((pos2X >= brickX) && (pos2X < brickX+100) && (pos2Y >= brickY-12.5)) { //if the second ball hits the brick
+		if ((pos2X >= brickX - 20) && (pos2X < brickX+120) && (pos2Y >= brickY-12.5)) { //if the second ball hits the brick
 			speed2X = -speed2X; //speed2X reverses
 			speed2Y = -speed2Y; //speed2Y reverses
 			speed2X = speed2X - 0.5; //speed2X increases by 0.5

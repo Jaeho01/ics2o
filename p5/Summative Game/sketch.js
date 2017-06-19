@@ -28,6 +28,9 @@ var mySound; // Creates a variable to hold the sound
 var myMusic; // Creates a variable to hold the music
 var myMusic2; 
 var myMusic3; 
+var myMusic4;
+var myMusic5;
+var myMusic6;
 
 
 function preload() {
@@ -35,6 +38,9 @@ function preload() {
   myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable audio.mp3
   myMusic2 = loadSound('audio.mp3');
   myMusic3 = loadSound('12. Supermarket Flowers - (www.SongsLover.com).mp3');
+  myMusic4 = loadSound('tumblr_m4z6fjOaDA1qe5g8ko1.mp3');
+  myMusic5 = loadSound('Will Champlin and Adam Levine-Tiny Dancer-The Voice 5 Top 3 (1).mp3');
+  myMusic6 = loadSound('AliciaKeys_NewYork.mp3');
 }
 
 
@@ -46,7 +52,10 @@ function setup() {
   mySound.setVolume(0.1);
   myMusic.setVolume(0.2);
   myMusic2.setVolume(0.2);
-  myMusic3.setVolume(0.2);
+  myMusic3.setVolume(0.3);
+  myMusic4.setVolume(0.2);
+  myMusic5.setVolume(0.2);
+  myMusic6.setVolume(0.2);	
   myMusic.play();
 }
 
@@ -90,9 +99,12 @@ function startup() {
 	rect(450, 0, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the box is clicked, play music #1
 		myMusic.stop();
-  		myMusic.setVolume(0.2);
   		myMusic2.setVolume(0.0);
   		myMusic3.setVolume(0.0);
+		myMusic4.setVolume(0.0);
+		myMusic5.setVolume(0.0);
+		myMusi6.setVolume(0.0);
+		myMusic.setVolume(0.2);
 		myMusic.play();
 	}
 	rect(450, 60, 50, 50);
@@ -100,7 +112,10 @@ function startup() {
   		myMusic2.stop();
 		myMusic.setVolume(0.0);
   		myMusic3.setVolume(0.0);
-  		myMusic2.setVolume(0.2);
+  		myMusic4.setVolume(0.0);
+		myMusic5.setVolume(0.0);
+		myMusic6.setVolume(0.0);
+		myMusic2.setVolume(0.2);
 		myMusic2.play();
 	}
 	rect(450, 120, 50, 50);
@@ -108,15 +123,54 @@ function startup() {
 		myMusic3.stop();
 		myMusic.setVolume(0.0);
   		myMusic2.setVolume(0.0);
-  		myMusic3.setVolume(0.2);
+  		myMusic4.setVolume(0.0);
+		myMusic5.setVolume(0.0);
+		myMusic6.setVolume(0.0);
+		myMusic3.setVolume(0.2);
 		myMusic3.play();
 	}
-	fill(255, 0, 0);
 	rect(450, 180, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 180) && (mouseY <= 230)) { //when the box is clicked, play music #3
+		  myMusic4.stop();
 		  myMusic.setVolume(0.0);
   		  myMusic2.setVolume(0.0);
   		  myMusic3.setVolume(0.0);
+		  myMusic5.setVolume(0.0);
+		  myMusic6.setVolume(0.0);
+		  myMusic4.setVolume(0.2);
+		  myMusic4.play();
+	}
+	rect(450, 240, 50, 50);
+	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 240) && (mouseY <= 290)) { //when the box is clicked, play music #3
+		  myMusic5.stop();
+		  myMusic.setVolume(0.0);
+  		  myMusic2.setVolume(0.0);
+  		  myMusic3.setVolume(0.0);
+		  myMusic4.setVolume(0.0);
+		  myMusic6.setVolume(0.0);
+		  myMusic5.setVolume(0.2);
+		  myMusic5.play();
+	}
+	rect(450, 300, 50, 50);
+	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 300) && (mouseY <= 350)) { //when the box is clicked, play music #3
+		  myMusic6.stop();
+		  myMusic.setVolume(0.0);
+  		  myMusic2.setVolume(0.0);
+  		  myMusic3.setVolume(0.0);
+		  myMusic4.setVolume(0.0);
+		  myMusic5.setVolume(0.0);
+		  myMusic6.setVolume(0.2);
+		  myMusic6.play();
+	}
+	fill(255, 0, 0);
+	rect(450, 360, 50, 50);
+	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 360) && (mouseY <= 410)) { //when the box is clicked, play music #3
+		  myMusic.setVolume(0.0);
+  		  myMusic2.setVolume(0.0);
+  		  myMusic3.setVolume(0.0);
+		  myMusic4.setVolume(0.0);
+		  myMusic5.setVolume(0.0);
+		  myMusic6.setVolume(0.0);
 	}
 }
 

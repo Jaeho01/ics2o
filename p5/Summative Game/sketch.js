@@ -44,7 +44,7 @@ function setup() {
   speed2Y = 5; //y speed of the second ball
   mySound.setVolume(0.1);
   myMusic.setVolume(0.2);
-  //myMusic2.setvolume(0.2);
+  myMusic2.setvolume(0.2);
   myMusic.play();
 }
 

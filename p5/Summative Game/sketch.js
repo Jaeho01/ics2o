@@ -60,9 +60,24 @@ function setup() {
 }
 
 function draw() {
-	  if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    myMusic.play()
-  }
+	if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+    		myMusic.play()
+  	}
+	if ((myMusic2.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+    		myMusic2.play()
+  	}
+	if ((myMusic3.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+    		myMusic3.play()
+  	}
+	if ((myMusic4.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+    		myMusic4.play()
+  	}
+	if ((myMusic5.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+    		myMusic5.play()
+  	}
+	if ((myMusic6.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
+    		myMusic6.play()
+  	}
 	if (status == 0) { //when the status is 0, display the startup page
 		startup(); 
 	}
@@ -104,7 +119,6 @@ function startup() {
 		myMusic4.setVolume(0.0); //turn the volume off
 		myMusic5.setVolume(0.0); //turn the volume off
 		myMusi6.setVolume(0.0); //turn the volume off
-		myMusic.setVolume(0.2); //set the volume to 0.2
 		myMusic.play();
 	}
 	rect(450, 60, 50, 50);
@@ -115,7 +129,6 @@ function startup() {
   		myMusic4.setVolume(0.0); //turn the volume off
 		myMusic5.setVolume(0.0); //turn the volume off
 		myMusic6.setVolume(0.0); //turn the volume off
-		//myMusic2.setVolume(0.2); //set the volume to 0.2
 		myMusic2.play();
 	}
 	rect(450, 120, 50, 50);
@@ -126,7 +139,6 @@ function startup() {
   		myMusic4.setVolume(0.0); //turn the volume off
 		myMusic5.setVolume(0.0); //turn the volume off
 		myMusic6.setVolume(0.0); //turn the volume off
-		//myMusic3.setVolume(0.2); //set the volume to 0.2
 		myMusic3.play();
 	}
 	rect(450, 180, 50, 50);
@@ -137,7 +149,6 @@ function startup() {
   		  myMusic3.setVolume(0.0); //turn the volume off
 		  myMusic5.setVolume(0.0); //turn the volume off
 		  myMusic6.setVolume(0.0); //turn the volume off
-		  myMusic4.setVolume(0.2); //set the volume to 0.2
 		  myMusic4.play();
 	}
 	rect(450, 240, 50, 50);
@@ -148,7 +159,6 @@ function startup() {
   		  myMusic3.setVolume(0.0); //turn the volume off
 		  myMusic4.setVolume(0.0); //turn the volume off
 		  myMusic6.setVolume(0.0); //turn the volume off
-		  myMusic5.setVolume(0.2); //set the volume to 0.2
 		  myMusic5.play();
 	}
 	rect(450, 300, 50, 50);
@@ -159,7 +169,6 @@ function startup() {
   		  myMusic3.setVolume(0.0); //turn the volume off
 		  myMusic4.setVolume(0.0); //turn the volume off
 		  myMusic5.setVolume(0.0); //turn the volume off
-		  myMusic6.setVolume(0.2); //set the volume to 0.2
 		  myMusic6.play();
 	}
 	fill(255, 0, 0);

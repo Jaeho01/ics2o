@@ -46,7 +46,7 @@ function setup() {
 
 function draw() {
 	  if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    myMusic.play()
+    myMusic.play();
   }
 	if (status == 0) { //when the status is 0, display the startup page
 		startup(); 
@@ -114,6 +114,8 @@ function howTo() {
 	
 function playGame() {
 	background(124 ,252 ,0); //set the background to green
+	fill(124, 252, 0);
+	rect(0, 0, 50, 50);
 	strokeWeight(2); //set the outline thickness to 2
 	fill(255, 153, 0); //set the colour of the ball orange
 	ellipse(posX, posY, ballWidth, ballWidth); //ball that bounces around

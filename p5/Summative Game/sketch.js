@@ -170,7 +170,7 @@ function startup() {
 	text("3", 470, 150);
 	text("4", 470, 210);
 	text("5", 470, 270);
-	text("6", 470, 230);
+	text("6", 470, 430);
 }
 
 function howTo() {

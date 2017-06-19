@@ -30,12 +30,12 @@ var myMusic2; // Creates a variable to hold the music
 var myMusic3; // Creates a variable to hold the music
 var myMusic4; // Creates a variable to hold the music
 var myMusic5; // Creates a variable to hold the music
-var myMusic6; // Creates a variable to hold the music
+var myMusic6; // Creates a variable to hold the music*/
 
 
 function preload() {
   mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable 
-  myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable (Locked Away)
+  /*myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable (Locked Away)
   myMusic2 = loadSound('audio.mp3'); // Loads the sound file into the variable (That's What I Like)
   myMusic3 = loadSound('12. Supermarket Flowers - (www.SongsLover.com).mp3'); // Loads the sound file into the variable (Supermarket Flowers)
   myMusic4 = loadSound('tumblr_m4z6fjOaDA1qe5g8ko1.mp3'); // Loads the sound file into the variable (All I Do Is Win)

@@ -165,7 +165,9 @@ function startup() {
 	}
 	fill(0, 0, 0);
 	textSize(5);
-	text("1", 470, 0);
+	text("1", 470, 5);
+	//text("1", 470, 0);
+	//text("1", 470, 0);
 }
 
 function howTo() {

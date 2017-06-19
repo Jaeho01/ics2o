@@ -243,7 +243,7 @@ function playGame() {
 		mySound.play(); //plays the sound
 			}
 	if (posY >= brickY-12.5 && posX >= brickX && posX < brickX+113) { //If the ball gets trapped in the brick, it puts it back up in the screen
-		posY = 475;
+		posY = brickY-12.5;
 	}
 	brickB();
 	if (score >= 14) { //if the score is 12 or larger

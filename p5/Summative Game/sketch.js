@@ -88,13 +88,11 @@ function startup() {
 	rect(450, 0, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the box is clicked, play music #1
 		myMusic2.stop();
-		myMusic.stop();
 		myMusic.play();
 	}
 	rect(450, 60, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 60) && (mouseY <= 110)) { //when the box is clicked, play music #2
 		myMusic.stop();
-		myMusic2.stop();
 		myMusic2.play();
 	}
 	rect(450, 120, 50, 50);

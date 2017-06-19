@@ -34,6 +34,7 @@ function preload() {
   mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
   myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable audio.mp3
   myMusic2 = loadSound('audio.mp3');
+  myMusic3 = loadSound('12. Supermarket Flowers - (www.SongsLover.com).mp3');
 }
 
 
@@ -45,6 +46,7 @@ function setup() {
   mySound.setVolume(0.1);
   myMusic.setVolume(0.2);
   myMusic2.setVolume(0.2);
+  myMusic3.setVolume(0.2);
   myMusic.play();
 }
 
@@ -87,18 +89,21 @@ function startup() {
 	fill(124, 252, 0);
 	rect(450, 0, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the box is clicked, play music #1
+		myMusic.stop();
 		myMusic2.stop();
 		myMusic.play();
 	}
 	rect(450, 60, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 60) && (mouseY <= 110)) { //when the box is clicked, play music #2
 		myMusic.stop();
+		myMusic3.stop();
 		myMusic2.play();
 	}
 	rect(450, 120, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 120) && (mouseY <= 170)) { //when the box is clicked, play music #3
 		myMusic.stop();
 		myMusic2.stop();
+		myMusic3.play();
 	}
 }
 

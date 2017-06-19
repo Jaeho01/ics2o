@@ -60,24 +60,6 @@ function setup() {
 }
 
 function draw() {
-	if ((myMusic.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    		myMusic.play()
-  	}
-	if ((myMusic2.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    		myMusic2.play()
-  	}
-	if ((myMusic3.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    		myMusic3.play()
-  	}
-	if ((myMusic4.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    		myMusic4.play()
-  	}
-	if ((myMusic5.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    		myMusic5.play()
-  	}
-	if ((myMusic6.isPlaying() == false) && (userStop == false)) {  // if the sound has stopped playing, play it again
-    		myMusic6.play()
-  	}
 	if (status == 0) { //when the status is 0, display the startup page
 		startup(); 
 	}

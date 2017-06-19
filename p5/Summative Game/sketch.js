@@ -34,13 +34,13 @@ var myMusic6; // Creates a variable to hold the music
 
 
 function preload() {
-  mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
-  myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable
-  myMusic2 = loadSound('audio.mp3'); // Loads the sound file into the variable
-  myMusic3 = loadSound('12. Supermarket Flowers - (www.SongsLover.com).mp3'); // Loads the sound file into the variable
-  myMusic4 = loadSound('tumblr_m4z6fjOaDA1qe5g8ko1.mp3'); // Loads the sound file into the variable
-  myMusic5 = loadSound('Will Champlin and Adam Levine-Tiny Dancer-The Voice 5 Top 3 (1).mp3'); // Loads the sound file into the variable
-  myMusic6 = loadSound('AliciaKeys_NewYork.mp3'); // Loads the sound file into the variable
+  mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable 
+  myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable (Locked Away)
+  myMusic2 = loadSound('audio.mp3'); // Loads the sound file into the variable (That's What I Like)
+  myMusic3 = loadSound('12. Supermarket Flowers - (www.SongsLover.com).mp3'); // Loads the sound file into the variable (Supermarket Flowers)
+  myMusic4 = loadSound('tumblr_m4z6fjOaDA1qe5g8ko1.mp3'); // Loads the sound file into the variable (All I Do Is Win)
+  myMusic5 = loadSound('Will Champlin and Adam Levine-Tiny Dancer-The Voice 5 Top 3 (1).mp3'); // Loads the sound file into the variable (Tiny Dancer)
+  myMusic6 = loadSound('AliciaKeys_NewYork.mp3'); // Loads the sound file into the variable (Empire State Of Mind)
 }
 
 
@@ -163,6 +163,8 @@ function startup() {
 		  myMusic5.setVolume(0.0); //turn the volume off
 		  myMusic6.setVolume(0.0); //turn the volume off
 	}
+	textSize(5);
+	text("1", 470, 0);
 }
 
 function howTo() {

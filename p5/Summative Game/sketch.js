@@ -233,7 +233,7 @@ function playGame() {
 				brickX = 0;
 					}
 			}
-	if ((posX >= brickX) && (posX < brickX+113) && (posY >= brickY-12.5)) { //when the ball hits the brick
+	if ((posX >= brickX +15) && (posX < brickX+113) && (posY >= brickY-12.5)) { //when the ball hits the brick
 		speedX = -speedX; //speedX reverses
 		speedY = -speedY; //speedY reverses
 		speedX = speedX - 0.5; //speedX increases by 0.5

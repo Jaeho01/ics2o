@@ -166,8 +166,11 @@ function startup() {
 	fill(0, 0, 0);
 	textSize(20);
 	text("1", 470, 30);
-	//text("1", 470, 0);
-	//text("1", 470, 0);
+	text("2", 470, 90);
+	text("3", 470, 150);
+	text("4", 470, 210);
+	text("5", 470, 270);
+	text("6", 470, 230);
 }
 
 function howTo() {

@@ -40,8 +40,8 @@ function preload() {
   myMusic3 = loadSound('12. Supermarket Flowers - (www.SongsLover.com).mp3'); // Loads the sound file into the variable (Supermarket Flowers)
   myMusic4 = loadSound('tumblr_m4z6fjOaDA1qe5g8ko1.mp3'); // Loads the sound file into the variable (All I Do Is Win)
   myMusic5 = loadSound('Will Champlin and Adam Levine-Tiny Dancer-The Voice 5 Top 3 (1).mp3'); // Loads the sound file into the variable (Tiny Dancer)
-  myMusic6 = loadSound('AliciaKeys_NewYork.mp3'); // Loads the sound file into the variable (Empire State Of Mind)
-}*/
+  myMusic6 = loadSound('AliciaKeys_NewYork.mp3'); // Loads the sound file into the variable (Empire State Of Mind)*/
+}
 
 
 function setup() {

@@ -89,23 +89,23 @@ function startup() {
 	fill(124, 252, 0);
 	rect(450, 0, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the box is clicked, play music #1
-		myMusic.stop();
-		myMusic2.stop();
-		myMusic3.stop();
+		//myMusic.stop();
+		//myMusic2.stop();
+		//myMusic3.stop();
 		myMusic.play();
 	}
 	rect(450, 60, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 60) && (mouseY <= 110)) { //when the box is clicked, play music #2
-		myMusic.stop();
-		myMusic3.stop();
-		myMusic2.stop();
+		//myMusic.stop();
+		//myMusic3.stop();
+		//myMusic2.stop();
 		myMusic2.play();
 	}
 	rect(450, 120, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 120) && (mouseY <= 170)) { //when the box is clicked, play music #3
-		myMusic.stop();
-		myMusic2.stop();
-		myMusic3.stop();
+		//myMusic.stop();
+		//myMusic2.stop();
+		//myMusic3.stop();
 		myMusic3.play();
 	}
 	rect(450, 180, 50, 50);

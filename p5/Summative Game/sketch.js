@@ -24,8 +24,8 @@ var boxY2 = 150;
 var boxY3 = 250;
 var boxW = 75;
 var boxL = 25;
-/*var mySound; // Creates a variable to hold the sound
-var myMusic; // Creates a variable to hold the music
+var mySound; // Creates a variable to hold the sound
+/*var myMusic; // Creates a variable to hold the music
 var myMusic2; // Creates a variable to hold the music
 var myMusic3; // Creates a variable to hold the music
 var myMusic4; // Creates a variable to hold the music

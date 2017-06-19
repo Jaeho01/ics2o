@@ -114,9 +114,9 @@ function startup() {
 	fill(255, 0, 0);
 	rect(450, 180, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 180) && (mouseY <= 230)) { //when the box is clicked, play music #3
-		myMusic.stop();
-		myMusic2.stop();
-		myMusic3.stop();
+		  myMusic.setVolume(0.0);
+  		  myMusic2.setVolume(0.0);
+  		  myMusic3.setVolume(0.0);
 	}
 }
 

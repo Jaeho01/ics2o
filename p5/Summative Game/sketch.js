@@ -44,6 +44,7 @@ function setup() {
   speed2Y = 5; //y speed of the second ball
   mySound.setVolume(0.1);
   myMusic.setVolume(0.2);
+  myMusic2.setvolume(0.2);
   myMusic.play();
 }
 
@@ -86,6 +87,7 @@ function startup() {
 	fill(124, 252, 0);
 	rect(450, 0, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the box is clicked, play music #1
+		myMusic.stop();
 		myMusic.play();
 	}
 	rect(450, 60, 50, 50);

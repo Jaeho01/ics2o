@@ -33,7 +33,7 @@ var myMusic3;
 function preload() {
   mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
   myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable audio.mp3
-  myMusic2 = loadSound('R. City ft. Adam Levine - Locked Away.mp3');
+  myMusic2 = loadSound('audio.mp3');
 }
 
 
@@ -44,7 +44,7 @@ function setup() {
   speed2Y = 5; //y speed of the second ball
   mySound.setVolume(0.1);
   myMusic.setVolume(0.2);
-  myMusic2.setvolume(0.2);
+  //myMusic2.setvolume(0.2);
   myMusic.play();
 }
 

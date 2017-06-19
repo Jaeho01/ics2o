@@ -47,7 +47,7 @@ function setup() {
   myMusic.setVolume(0.2);
   myMusic2.setVolume(0.2);
   myMusic3.setVolume(0.2);
-  myMusic.play();
+  myMusic3.play();
 }
 
 function draw() {

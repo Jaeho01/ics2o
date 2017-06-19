@@ -92,7 +92,7 @@ function startup() {
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) { //when the play box is clicked, change the status to 1
 		status = 1;
 	}
-	fill(124, 252, 0);
+	/*fill(124, 252, 0);
 	rect(450, 0, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the box is clicked, play music #1
 		myMusic.stop();
@@ -170,7 +170,7 @@ function startup() {
 	text("3", 470, 150);
 	text("4", 470, 210);
 	text("5", 470, 270);
-	text("6", 470, 330);
+	text("6", 470, 330); */
 }
 
 function howTo() {

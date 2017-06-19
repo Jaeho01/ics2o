@@ -697,7 +697,7 @@ function endGame() {
 		speedY = 5; //y speed of the ball
 		brickX = 200; //x position of the brick
 		brickY = 475; //y position of the brick
-		speedBrick = 10; //speed of the brick
+		speedBrick = 20; //speed of the brick
 		score = 0; //starting score
 		status = 0; //makes the status 0 
 		speed2X = 5; //x speed of the second ball

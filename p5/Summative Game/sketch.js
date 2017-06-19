@@ -24,7 +24,7 @@ var boxY2 = 150;
 var boxY3 = 250;
 var boxW = 75;
 var boxL = 25;
-var mySound; // Creates a variable to hold the sound
+/*var mySound; // Creates a variable to hold the sound
 var myMusic; // Creates a variable to hold the music
 var myMusic2; // Creates a variable to hold the music
 var myMusic3; // Creates a variable to hold the music
@@ -41,7 +41,7 @@ function preload() {
   myMusic4 = loadSound('tumblr_m4z6fjOaDA1qe5g8ko1.mp3'); // Loads the sound file into the variable (All I Do Is Win)
   myMusic5 = loadSound('Will Champlin and Adam Levine-Tiny Dancer-The Voice 5 Top 3 (1).mp3'); // Loads the sound file into the variable (Tiny Dancer)
   myMusic6 = loadSound('AliciaKeys_NewYork.mp3'); // Loads the sound file into the variable (Empire State Of Mind)
-}
+}*/
 
 
 function setup() {
@@ -50,13 +50,13 @@ function setup() {
   speed2X = 5; //x speed of the second ball
   speed2Y = 5; //y speed of the second ball
   mySound.setVolume(0.1); //set the volume to 0.1
-  myMusic.setVolume(0.2); //set the volume to 0.2
+  /*myMusic.setVolume(0.2); //set the volume to 0.2
   myMusic2.setVolume(0.2); //set the volume to 0.2
   myMusic3.setVolume(0.3); //set the volume to 0.3
   myMusic4.setVolume(0.2); //set the volume to 0.2
   myMusic5.setVolume(0.2); //set the volume to 0.2
   myMusic6.setVolume(0.2); //set the volume to 0.2
-  myMusic.play(); //play the song #1
+  myMusic.play(); //play the song #1*/
 }
 
 function draw() {

@@ -164,8 +164,8 @@ function startup() {
 		  myMusic6.setVolume(0.0); //turn the volume off
 	}
 	fill(0, 0, 0);
-	textSize(5);
-	text("1", 470, 5);
+	textSize(20);
+	text("1", 470, 20);
 	//text("1", 470, 0);
 	//text("1", 470, 0);
 }

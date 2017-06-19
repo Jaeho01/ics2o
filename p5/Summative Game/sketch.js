@@ -26,11 +26,14 @@ var boxW = 75;
 var boxL = 25;
 var mySound; // Creates a variable to hold the sound
 var myMusic; // Creates a variable to hold the music
+var myMusic2; 
+var myMusic3; 
 
 
 function preload() {
   mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable
   myMusic = loadSound('audio.mp3'); // Loads the sound file into the variable
+  myMusic2 = loadSound('R. City ft. Adam Levine - Locked Away.mp3');
 }
 
 
@@ -41,6 +44,7 @@ function setup() {
   speed2Y = 5; //y speed of the second ball
   mySound.setVolume(0.1);
   myMusic.setVolume(0.2);
+  myMusic2.setvolume(0.3);
   myMusic.play();
 }
 
@@ -64,6 +68,21 @@ function draw() {
 	
 function startup() {
 	background(0, 191, 255); //set the background to light blue
+	fill(124, 252, 0);
+	rect(450, 0, 50, 50);
+	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the play box is clicked, change the status to 1
+		myMusic.play();
+	}
+	rect(450, 60, 50, 50);
+	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 60) && (mouseY <= 110)) { //when the play box is clicked, change the status to 1
+		myMusic.stop();
+		myMusic2.play();
+	}
+	rect(450, 120, 50, 50);
+	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 120) && (mouseY <= 170)) { //when the play box is clicked, change the status to 1
+		myMusic.stop();
+		myMusic2.stop();
+	}
 	strokeWeight(2); //set the outline thickness to 2
 	fill(0, 0, 128); //make the colour of the rectangle blue
 	rect(125, 350, 250, 50); //draw the rectangle
@@ -114,8 +133,6 @@ function howTo() {
 	
 function playGame() {
 	background(124 ,252 ,0); //set the background to green
-	fill(124, 252, 0);
-	rect(0, 0, 50, 50);
 	strokeWeight(2); //set the outline thickness to 2
 	fill(255, 153, 0); //set the colour of the ball orange
 	ellipse(posX, posY, ballWidth, ballWidth); //ball that bounces around

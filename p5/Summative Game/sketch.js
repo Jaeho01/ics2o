@@ -165,7 +165,7 @@ function startup() {
 	}
 	fill(0, 0, 0);
 	textSize(20);
-	text("1", 470, 20);
+	text("1", 470, 30);
 	//text("1", 470, 0);
 	//text("1", 470, 0);
 }

@@ -163,6 +163,7 @@ function startup() {
 		  myMusic5.setVolume(0.0); //turn the volume off
 		  myMusic6.setVolume(0.0); //turn the volume off
 	}
+	fill(0, 0, 0);
 	textSize(5);
 	text("1", 470, 0);
 }

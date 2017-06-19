@@ -1,6 +1,6 @@
 /*Summative Game
   Jaeho Jang
-  2017-06-14 */
+  2017-06-19 */
 
 var posX = 300; //x position of the ball
 var posY = 250; //y position of the ball
@@ -16,25 +16,26 @@ var score = 0; //starting score
 var status = 0; //makes the status 0 
 var speed2X = 5; //x speed of the second ball
 var speed2Y = 5; //y speed of the second ball
-var boxX1 = 50;
-var boxX2 = 200;
-var boxX3 = 350;
-var boxY1 = 50;
-var boxY2 = 150; 
-var boxY3 = 250;
-var boxW = 75;
-var boxL = 25;
+var boxX1 = 50; //first x coordinate for the brick
+var boxX2 = 200; //second x coordinate for the brick
+var boxX3 = 350; //third x coordinate for the brick
+var boxY1 = 50; //first y coordinate for the brick
+var boxY2 = 150; //second y coordinate for the brick
+var boxY3 = 250; //third y coordinate for the brick
+var boxW = 75; //width of the brick
+var boxL = 25; //length of the brick
 var mySound; // Creates a variable to hold the sound
-/*var myMusic; // Creates a variable to hold the music
+//took it out because of copyright
+/*var myMusic; // Creates a variable to hold the music 
 var myMusic2; // Creates a variable to hold the music
 var myMusic3; // Creates a variable to hold the music
 var myMusic4; // Creates a variable to hold the music
 var myMusic5; // Creates a variable to hold the music
 var myMusic6; // Creates a variable to hold the music*/
 
-
 function preload() {
   mySound = loadSound('Jump-SoundBible.com-1007297584.mp3');  // Loads the sound file into the variable 
+  //took it out because of copyright
   /*myMusic = loadSound('R. City ft. Adam Levine - Locked Away.mp3'); // Loads the sound file into the variable (Locked Away)
   myMusic2 = loadSound('audio.mp3'); // Loads the sound file into the variable (That's What I Like)
   myMusic3 = loadSound('12. Supermarket Flowers - (www.SongsLover.com).mp3'); // Loads the sound file into the variable (Supermarket Flowers)
@@ -43,13 +44,13 @@ function preload() {
   myMusic6 = loadSound('AliciaKeys_NewYork.mp3'); // Loads the sound file into the variable (Empire State Of Mind)*/
 }
 
-
 function setup() {
   createCanvas(500, 500);
   status = 0; //makes sure that the status is 0 when the game starts
   speed2X = 5; //x speed of the second ball
   speed2Y = 5; //y speed of the second ball
   mySound.setVolume(0.1); //set the volume to 0.1
+  //took it out because of copyright
   /*myMusic.setVolume(0.2); //set the volume to 0.2
   myMusic2.setVolume(0.2); //set the volume to 0.2
   myMusic3.setVolume(0.3); //set the volume to 0.3
@@ -92,6 +93,7 @@ function startup() {
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 375) && (mouseY >= 350) && (mouseY <= 400)) { //when the play box is clicked, change the status to 1
 		status = 1;
 	}
+	//took it out because of copyright
 	/*fill(124, 252, 0);
 	rect(450, 0, 50, 50);
 	if(mouseIsPressed && (mouseX >= 450) && (mouseX <= 500) && (mouseY >= 0) && (mouseY <= 50)) { //when the box is clicked, play music #1
@@ -176,11 +178,11 @@ function startup() {
 function howTo() {
 	background(192, 192, 192);
 	fill(0, 0, 128); //make the colour of the rectangle blue
-	textSize(30);
+	textSize(30); //sets the text size to 30
 	text("How to Play the Game", 100, 80);
 	rect(125, 400, 250, 50); //draw the rectangle
-	fill(0, 0, 0);
-	textSize(15);
+	fill(0, 0, 0); //sets the font color to black
+	textSize(15); //sets the font size to 15
 	text("The goal of the game is to get the highest score by keeping the balls", 20, 150);
 	text("in the screen", 200, 175);
 	text("You will be able to control the brick at the bottom with your", 20, 200);
@@ -189,10 +191,10 @@ function howTo() {
 	text("The ball will bounce off the bricks on the screen, sometimes", 20, 300);
 	text("If one of the ball hits the bottom side, the game's over", 20, 350);
 	fill(255, 255, 255); //set the text colour to white
-	textSize(30);
+	textSize(30); //sets the font size to 30
 	text("Back", 157.5, 435); //display "Back" in the rectangle that had been drawn 
 	text("Play", 282.5, 435); //display "Play" in the rectangle that had been drawn 
-	strokeWeight(5);
+	strokeWeight(5); 
 	fill(0, 0, 0);
 	line(250, 400, 250, 450);
 	if(mouseIsPressed && (mouseX >= 125) && (mouseX <= 250) && (mouseY >= 400) && (mouseY <= 450)) { //when the back box is clicked, change the status to 0
@@ -240,6 +242,9 @@ function playGame() {
 		score = score + 1; //Makes the score go up 1
 		mySound.play(); //plays the sound
 			}
+	if (posY >= 475) { //If the ball gets trapped in the brick, it puts it back up in the screen
+		posX = 475;
+	}
 	brickB();
 	if (score >= 14) { //if the score is 12 or larger
 		fill(0, 0, 128); //set the colour of the ball to blue
@@ -267,8 +272,8 @@ function playGame() {
 			status = 2; //make status 2
 		}
 	}
-	
 	fill(192, 192, 192); //set the colour to grey
+	
 	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1
 	
 	if (posX >= boxX1 && posX <= boxX1 + boxW && posY <= boxY1 && posY >= boxY1 - 1) { //top
@@ -483,7 +488,6 @@ function playGame() {
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	    
 	    
 	rect(boxX2, boxY2, boxW, boxL); //draw rectangle 6
 

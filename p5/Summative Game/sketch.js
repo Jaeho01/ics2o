@@ -279,42 +279,42 @@ function playGame() {
 	
 	rect(boxX1, boxY1, boxW, boxL); //draw rectangle 1
 	
-	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY <= boxY1 - 12.5 && posY >= boxY1 - 1 - 12.5) { //top
+	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY <= boxY1 - 12.5 && posY >= boxY1 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y <= boxY1 - 12.5 && pos2Y >= boxY1 - 1 - 12.5) { //top
+	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y <= boxY1 - 12.5 && pos2Y >= boxY1 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY >= boxY1 + boxL + 12.5 && posY <= boxY1 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY >= boxY1 + boxL + 12.5 && posY <= boxY1 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y >= boxY1 + boxL + 12.5 && pos2Y <= boxY1 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y >= boxY1 + boxL + 12.5 && pos2Y <= boxY1 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 - 1 - 12.5 && posX <= boxX1 - 12.5 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
+	if (posX >= boxX1 - 2 - 12.5 && posX <= boxX1 - 12.5 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 1 - 12.5 && pos2X <= boxX1 - 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
+	if (pos2X >= boxX1 - 2 - 12.5 && pos2X <= boxX1 - 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
+	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 2 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
+	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 2 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -322,42 +322,42 @@ function playGame() {
 	
 	rect(boxX1, boxY2, boxW, boxL); //draw rectangle 2
 	
-	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY <= boxY2 - 12.5 && posY >= boxY2 - 1 - 12.5) { //top
+	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY <= boxY2 - 12.5 && posY >= boxY2 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y <= boxY2 - 12.5 && pos2Y >= boxY2 - 1 - 12.5) { //top
+	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y <= boxY2 - 12.5 && pos2Y >= boxY2 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY >= boxY2 + boxL + 12.5 && posY <= boxY2 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY >= boxY2 + boxL + 12.5 && posY <= boxY2 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y >= boxY2 + boxL + 12.5 && pos2Y <= boxY2 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y >= boxY2 + boxL + 12.5 && pos2Y <= boxY2 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}	
-	if (posX >= boxX1 - 1 - 12.5 && posX <= boxX1 - 12.5 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
+	if (posX >= boxX1 - 2 - 12.5 && posX <= boxX1 - 12.5 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 1 - 12.5 && pos2X <= boxX1 - 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
+	if (pos2X >= boxX1 - 2 - 12.5 && pos2X <= boxX1 - 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
+	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 2 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
+	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 2 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -365,42 +365,42 @@ function playGame() {
 	    
 	rect(boxX1, boxY3, boxW, boxL); //draw rectangle 3
 	
-	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY <= boxY3 - 12.5 && posY >= boxY3 - 1 - 12.5) { //top
+	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY <= boxY3 - 12.5 && posY >= boxY3 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y <= boxY3 - 12.5 && pos2Y >= boxY3 - 1 - 12.5) { //top
+	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y <= boxY3 - 12.5 && pos2Y >= boxY3 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY >= boxY3 + boxL + 12.5 && posY <= boxY3 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX1 - 12.5 && posX <= boxX1 + boxW + 12.5 && posY >= boxY3 + boxL + 12.5 && posY <= boxY3 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y >= boxY3 + boxL + 12.5 && pos2Y <= boxY3 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX1 - 12.5 && pos2X <= boxX1 + boxW + 12.5 && pos2Y >= boxY3 + boxL + 12.5 && pos2Y <= boxY3 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 - 1 - 12.5 && posX <= boxX1 - 12.5 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
+	if (posX >= boxX1 - 2 - 12.5 && posX <= boxX1 - 12.5 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 - 1 - 12.5 && pos2X <= boxX1 - 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
+	if (pos2X >= boxX1 - 2 - 12.5 && pos2X <= boxX1 - 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 1 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
+	if (posX >= boxX1 + boxW && posX <= boxX1 + boxW + 2 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 1 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
+	if (pos2X >= boxX1 + boxW && pos2X <= boxX1 + boxW + 2 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -408,42 +408,42 @@ function playGame() {
 	    
 	rect(boxX2, boxY1, boxW, boxL); //draw rectangle 4
 	
-	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY <= boxY1 - 12.5 && posY >= boxY1 - 1 - 12.5) { //top
+	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY <= boxY1 - 12.5 && posY >= boxY1 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y <= boxY1 - 12.5 && pos2Y >= boxY1 - 1 - 12.5) { //top
+	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y <= boxY1 - 12.5 && pos2Y >= boxY1 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY >= boxY1 + boxL + 12.5 && posY <= boxY1 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY >= boxY1 + boxL + 12.5 && posY <= boxY1 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y >= boxY1 + boxL + 12.5 && pos2Y <= boxY1 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y >= boxY1 + boxL + 12.5 && pos2Y <= boxY1 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 - 1 - 12.5 && posX <= boxX2 - 12.5 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
+	if (posX >= boxX2 - 2 - 12.5 && posX <= boxX2 - 12.5 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 1 - 12.5 && pos2X <= boxX2 - 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
+	if (pos2X >= boxX2 - 2 - 12.5 && pos2X <= boxX2 - 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 + boxW + 12.5 && posX <= boxX2 + boxW + 1 + 12.5 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
+	if (posX >= boxX2 + boxW + 12.5 && posX <= boxX2 + boxW + 2 + 12.5 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 + boxW + 12.5 && pos2X <= boxX2 + boxW + 1 + 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
+	if (pos2X >= boxX2 + boxW + 12.5 && pos2X <= boxX2 + boxW + 2 + 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -451,42 +451,42 @@ function playGame() {
 	    
 	rect(boxX3, boxY1, boxW, boxL); //draw rectangle 5
 	
-	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY <= boxY1 - 12.5 && posY >= boxY1 - 1 - 12.5) { //top
+	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY <= boxY1 - 12.5 && posY >= boxY1 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y <= boxY1 - 12.5 && pos2Y >= boxY1 - 1 - 12.5) { //top
+	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y <= boxY1 - 12.5 && pos2Y >= boxY1 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY >= boxY1 + boxL + 12.5 && posY <= boxY1 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY >= boxY1 + boxL + 12.5 && posY <= boxY1 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y >= boxY1 + boxL + 12.5 && pos2Y <= boxY1 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y >= boxY1 + boxL + 12.5 && pos2Y <= boxY1 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 - 1 - 12.5 && posX <= boxX3 - 12.5 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
+	if (posX >= boxX3 - 2 - 12.5 && posX <= boxX3 - 12.5 && posY >= boxY1 && posY <= boxY1 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 1 - 12.5 && pos2X <= boxX3 - 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
+	if (pos2X >= boxX3 - 2 - 12.5 && pos2X <= boxX3 - 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 + boxW + 12.5 && posX <= boxX3 + boxW + 1 + 12.5 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
+	if (posX >= boxX3 + boxW + 12.5 && posX <= boxX3 + boxW + 2 + 12.5 && posY >= boxY1 && posY <= boxY1 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 + boxW + 12.5 && pos2X <= boxX3 + boxW + 1 + 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
+	if (pos2X >= boxX3 + boxW + 12.5 && pos2X <= boxX3 + boxW + 2 + 12.5 && pos2Y >= boxY1 && pos2Y <= boxY1 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -494,42 +494,42 @@ function playGame() {
 	    
 	rect(boxX2, boxY2, boxW, boxL); //draw rectangle 6
 
-	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY <= boxY2 - 12.5 && posY >= boxY2 - 1 - 12.5) { //top
+	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY <= boxY2 - 12.5 && posY >= boxY2 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y <= boxY2 - 12.5 && pos2Y >= boxY2 - 1 - 12.5) { //top
+	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y <= boxY2 - 12.5 && pos2Y >= boxY2 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY >= boxY2 + boxL + 12.5 && posY <= boxY2 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY >= boxY2 + boxL + 12.5 && posY <= boxY2 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y >= boxY2 + boxL + 12.5 && pos2Y <= boxY2 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y >= boxY2 + boxL + 12.5 && pos2Y <= boxY2 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 - 1 - 12.5 && posX <= boxX2 - 12.5 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
+	if (posX >= boxX2 - 2 - 12.5 && posX <= boxX2 - 12.5 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 1 - 12.5 && pos2X <= boxX2 - 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
+	if (pos2X >= boxX2 - 2 - 12.5 && pos2X <= boxX2 - 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 + boxW + 12.5 && posX <= boxX2 + boxW + 1 + 12.5 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
+	if (posX >= boxX2 + boxW + 12.5 && posX <= boxX2 + boxW + 2 + 12.5 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 + boxW + 12.5 && pos2X <= boxX2 + boxW + 1 + 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
+	if (pos2X >= boxX2 + boxW + 12.5 && pos2X <= boxX2 + boxW + 2 + 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -537,42 +537,42 @@ function playGame() {
 	
 	rect(boxX3, boxY2, boxW, boxL); //draw rectangle 7
 	
-	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY <= boxY2 - 12.5 && posY >= boxY2 - 1 - 12.5) { //top
+	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY <= boxY2 - 12.5 && posY >= boxY2 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y <= boxY2 - 12.5 && pos2Y >= boxY2 - 1 - 12.5) { //top
+	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y <= boxY2 - 12.5 && pos2Y >= boxY2 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY >= boxY2 + boxL + 12.5 && posY <= boxY2 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY >= boxY2 + boxL + 12.5 && posY <= boxY2 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y >= boxY2 + boxL + 12.5 && pos2Y <= boxY2 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y >= boxY2 + boxL + 12.5 && pos2Y <= boxY2 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}	
-	if (posX >= boxX3 - 1 - 12.5 && posX <= boxX3 - 12.5 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
+	if (posX >= boxX3 - 2 - 12.5 && posX <= boxX3 - 12.5 && posY >= boxY2 && posY <= boxY2 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 1 - 12.5 && pos2X <= boxX3 - 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
+	if (pos2X >= boxX3 - 2 - 12.5 && pos2X <= boxX3 - 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 + boxW + 12.5 && posX <= boxX3 + boxW + 1 + 12.5 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
+	if (posX >= boxX3 + boxW + 12.5 && posX <= boxX3 + boxW + 2 + 12.5 && posY >= boxY2 && posY <= boxY2 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 + boxW + 12.5 && pos2X <= boxX3 + boxW + 1 + 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
+	if (pos2X >= boxX3 + boxW + 12.5 && pos2X <= boxX3 + boxW + 2 + 12.5 && pos2Y >= boxY2 && pos2Y <= boxY2 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -580,42 +580,42 @@ function playGame() {
 	     
 	rect(boxX2, boxY3, boxW, boxL); //draw rectangle 8
 	
-	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY <= boxY3 - 12.5 && posY >= boxY3 - 1 - 12.5) { //top
+	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY <= boxY3 - 12.5 && posY >= boxY3 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y <= boxY3 - 12.5 && pos2Y >= boxY3 - 1 - 12.5) { //top
+	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y <= boxY3 - 12.5 && pos2Y >= boxY3 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY >= boxY3 + boxL + 12.5 && posY <= boxY3 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX2 - 12.5 && posX <= boxX2 + boxW + 12.5 && posY >= boxY3 + boxL + 12.5 && posY <= boxY3 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y >= boxY3 + boxL + 12.5 && pos2Y <= boxY3 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX2 - 12.5 && pos2X <= boxX2 + boxW + 12.5 && pos2Y >= boxY3 + boxL + 12.5 && pos2Y <= boxY3 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 - 1 - 12.5 && posX <= boxX2 - 12.5 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
+	if (posX >= boxX2 - 2 - 12.5 && posX <= boxX2 - 12.5 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 - 1 - 12.5 && pos2X <= boxX2 - 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
+	if (pos2X >= boxX2 - 2 - 12.5 && pos2X <= boxX2 - 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX2 + boxW + 12.5 && posX <= boxX2 + boxW + 1 + 12.5 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
+	if (posX >= boxX2 + boxW + 12.5 && posX <= boxX2 + boxW + 2 + 12.5 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX2 + boxW + 12.5 && pos2X <= boxX2 + boxW + 1 + 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
+	if (pos2X >= boxX2 + boxW + 12.5 && pos2X <= boxX2 + boxW + 2 + 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
@@ -623,42 +623,42 @@ function playGame() {
 	     
 	rect(boxX3, boxY3, boxW, boxL); //draw rectangle 9
 	
-	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY <= boxY3 - 12.5 && posY >= boxY3 - 1 - 12.5) { //top
+	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY <= boxY3 - 12.5 && posY >= boxY3 - 2 - 12.5) { //top
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW+ 12.5 && pos2Y <= boxY3 - 12.5 && pos2Y >= boxY3 - 1 - 12.5) { //top
+	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW+ 12.5 && pos2Y <= boxY3 - 12.5 && pos2Y >= boxY3 - 2 - 12.5) { //top
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY >= boxY3 + boxL + 12.5 && posY <= boxY3 + boxL + 1 + 12.5) { //bottom
+	if (posX >= boxX3 - 12.5 && posX <= boxX3 + boxW + 12.5 && posY >= boxY3 + boxL + 12.5 && posY <= boxY3 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y >= boxY3 + boxL + 12.5 && pos2Y <= boxY3 + boxL + 1 + 12.5) { //bottom
+	if (pos2X >= boxX3 - 12.5 && pos2X <= boxX3 + boxW + 12.5 && pos2Y >= boxY3 + boxL + 12.5 && pos2Y <= boxY3 + boxL + 2 + 12.5) { //bottom
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 - 1 - 12.5 && posX <= boxX3 - 12.5 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
+	if (posX >= boxX3 - 2 - 12.5 && posX <= boxX3 - 12.5 && posY >= boxY3 && posY <= boxY3 + boxL) { //left
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 - 1 - 12.5 && pos2X <= boxX3 - 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
+	if (pos2X >= boxX3 - 2 - 12.5 && pos2X <= boxX3 - 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 + boxL) { //left
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;
 	}
-	if (posX >= boxX3 + boxW + 12.5 && posX <= boxX3 + boxW + 1 + 12.5 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
+	if (posX >= boxX3 + boxW + 12.5 && posX <= boxX3 + boxW + 2 + 12.5 && posY >= boxY3 && posY <= boxY3 +boxL) { //right
 		score = score + 1;
 		speedX = -speedX;
 		speedY = -speedY;
 	} 
-	if (pos2X >= boxX3 + boxW + 12.5 && pos2X <= boxX3 + boxW + 1 + 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
+	if (pos2X >= boxX3 + boxW + 12.5 && pos2X <= boxX3 + boxW + 2 + 12.5 && pos2Y >= boxY3 && pos2Y <= boxY3 +boxL) { //right
 		score = score + 1;
 		speed2X = -speed2X;
 		speed2Y = -speed2Y;

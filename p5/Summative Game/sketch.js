@@ -245,6 +245,9 @@ function playGame() {
 	if (posY >= brickY-12.5 && posX >= brickX && posX < brickX+113) { //If the ball gets trapped in the brick, it puts it back up in the screen
 		posY = brickY-12.5;
 	}
+	if (pos2Y >= brickY-12.5 && pos2X >= brickX && pos2X < brickX+113) { //If the ball gets trapped in the brick, it puts it back up in the screen
+		pos2Y = brickY-12.5;
+	}
 	brickB();
 	if (score >= 14) { //if the score is 12 or larger
 		fill(0, 0, 128); //set the colour of the ball to blue
